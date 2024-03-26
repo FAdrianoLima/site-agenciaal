@@ -1,12 +1,10 @@
 import Menu from "../components/menu";
 import Rodape from "../components/rodape";
 import Whats from "../components/whats";
-import styles from "../styles/Newfly.module.css";
-import Carousel from "react-material-ui-carousel";
-import { Paper, Button } from "@mui/material";
+import styles from "../styles/Agencia.module.css";
 import Link from "next/link";
 import RodapeNewFly from "../components/rodape-newfly";
-import Portifolio from "../components/portifolio";
+import Equipe from "../components/equipe";
 
 export default function anewfly() {
   return (
@@ -105,7 +103,7 @@ export default function anewfly() {
       <section style={{ marginTop: "50px" }} className={styles.background}>
         <div className={styles.interno}></div>
       </section>
-      <Portifolio />
+      <Equipe />
 
       <section style={{ marginTop: "50px" }} className={styles.background}>
         <div className={styles.interno}>

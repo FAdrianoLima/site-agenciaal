@@ -1,12 +1,8 @@
 import Menu from "../components/menu";
 import Rodape from "../components/rodape";
-import Whats from "../components/whats";
 import styles from "../styles/Servicos.module.css";
-import Carousel from "react-material-ui-carousel";
-import { Paper, Button } from "@mui/material";
 import Link from "next/link";
 import RodapeNewFly from "../components/rodape-newfly";
-import Portifolio from "../components/portifolio";
 
 export default function Design() {
   return (

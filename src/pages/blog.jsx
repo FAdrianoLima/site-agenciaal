@@ -3,7 +3,6 @@ import Rodape from "../components/rodape";
 import styles from "../styles/Blog.module.css";
 import Link from "next/link";
 import RodapeNewFly from "../components/rodape-newfly";
-import Portifolio from "../components/portifolio";
 
 export default function Blog() {
   return (
