@@ -3,10 +3,8 @@ import Rodape from "../components/rodape";
 import Whats from "../components/whats";
 import styles from "../styles/Cases2.module.css";
 import Carousel from "react-material-ui-carousel";
-import { Paper, Button } from "@mui/material";
 import Link from "next/link";
-import RodapeNewFly from "../components/rodape-newfly";
-import Portifolio from "../components/portifolio";
+import RodapeAl from "../components/rodape-al";
 
 export default function anewfly() {
   return (
@@ -147,7 +145,7 @@ export default function anewfly() {
       </section>
 
       <Rodape />
-      <RodapeNewFly />
+      <RodapeAl />
     </>
   );
 }

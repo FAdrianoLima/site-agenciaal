@@ -2,7 +2,7 @@ import Menu from "../components/menu";
 import Rodape from "../components/rodape";
 import styles from "../styles/Blog.module.css";
 import Link from "next/link";
-import RodapeNewFly from "../components/rodape-newfly";
+import RodapeAl from "../components/rodape-al";
 
 export default function Blog() {
   return (
@@ -143,7 +143,7 @@ export default function Blog() {
 
 
       <Rodape />
-      <RodapeNewFly />
+      <RodapeAl />
     </>
   );
 }

@@ -5,8 +5,7 @@ import styles from "../styles/Cases.module.css";
 import Carousel from "react-material-ui-carousel";
 import { Paper, Button } from "@mui/material";
 import Link from "next/link";
-import RodapeNewFly from "../components/rodape-newfly";
-import Portifolio from "../components/portifolio";
+import RodapeAl from "../components/rodape-al"; 
 
 export default function Hanisch() {
   return (
@@ -106,7 +105,7 @@ export default function Hanisch() {
 
 
       <Rodape />
-      <RodapeNewFly />
+      <RodapeAl />
     </>
   );
 }

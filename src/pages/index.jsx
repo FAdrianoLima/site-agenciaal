@@ -2,8 +2,7 @@ import Banner from "../components/banner";
 import Menu from "../components/menu";
 import Rodape from "../components/rodape";
 import Whats from "../components/whats";
-import RodapeNewFly from "../components/rodape-newfly";
-import Referencia from "../components/referencia";
+import RodapeAl from "../components/rodape-al";
 import styles from "../styles/Quemsomos.module.css";
 import  "../styles/Quemsomos.module.css";
 import React, { useState } from 'react';
@@ -493,10 +492,9 @@ export default function Home() {
           </Link>
           </div>
       </section>
-      <Referencia />
       <Rodape />
       <Whats />
-      <RodapeNewFly />
+      <RodapeAl />
     </>
   );
 }

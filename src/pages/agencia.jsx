@@ -3,7 +3,7 @@ import Rodape from "../components/rodape";
 import Whats from "../components/whats";
 import styles from "../styles/Agencia.module.css";
 import Link from "next/link";
-import RodapeNewFly from "../components/rodape-newfly";
+import RodapeAl from "../components/rodape-al";
 import Equipe from "../components/equipe";
 
 export default function anewfly() {
@@ -191,7 +191,7 @@ export default function anewfly() {
       </section>
 
       <Rodape />
-      <RodapeNewFly />
+      <RodapeAl />
     </>
   );
 }

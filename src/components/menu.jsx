@@ -45,7 +45,7 @@ function Menu() {
   return (
     <div id={styles.menuheader} className={styles.header}>
       <div className={`${styles.interno}`}>
-        <img src="/static/images/logo.png" alt="Logo branca" className={styles.logo} />
+        <img src="/static/images/Logo-Horizontal.png" alt="Logo horizontal" className={styles.logo} />
 
         <button id={`${styles.btn_mobile}`}>
           <span id={`${styles.hamburguer}`}></span>
@@ -143,14 +143,14 @@ function Menu() {
             </Link>
           </li>
           <li>
-            <Link href="https://www.instagram.com/newflydigital/">
+            <Link href="https://www.instagram.com/al_agencia_de_marketing/">
               <a target="_blank">
                 <img src="/Instagram.png"></img>
               </a>
             </Link>
           </li>
           <li>
-            <Link href="https://www.linkedin.com/company/newflydigital/">
+            <Link href="https://www.linkedin.com/company/al-agência-de-marketing/">
               <a target="_blank">
                 <img src="/LinkedIn.png"></img>
               </a>

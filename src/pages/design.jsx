@@ -2,7 +2,7 @@ import Menu from "../components/menu";
 import Rodape from "../components/rodape";
 import styles from "../styles/Servicos.module.css";
 import Link from "next/link";
-import RodapeNewFly from "../components/rodape-newfly";
+import RodapeAl from "../components/rodape-al";
 
 export default function Design() {
   return (
@@ -160,7 +160,7 @@ export default function Design() {
 
 
       <Rodape />
-      <RodapeNewFly />
+      <RodapeAl />
     </>
   );
 }
