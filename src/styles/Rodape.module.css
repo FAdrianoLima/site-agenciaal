@@ -1,0 +1,243 @@
+.background {
+  background-color: #393939;
+  width: 100%;
+  padding-top: 5rem;
+  padding-bottom: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+
+.interno {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  max-width: 80rem;
+}
+
+.box_row {
+  font-size: 14px;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 5px;
+  font-size: 18px;
+  line-height: 26px;
+}
+
+.box_row p {
+  font-size: 18px;
+  line-height: 26px;
+  margin: 0;
+}
+
+.box {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  max-width: 23rem;
+}
+
+.box2 {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  max-width: 57rem;
+}
+
+.logo {
+  max-width: 10rem;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+}
+
+.social_media {
+  width: 10rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  margin-top: 2.5rem;
+  z-index: 1000;
+}
+
+.social_media li {
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+}
+
+.social_media li img {
+  width: 1.25rem;
+  margin-bottom: 0.2rem;
+}
+
+.social_media li svg {
+  width: 1.25rem;
+  margin-bottom: 0.2rem;
+  fill: 000000;
+  display: none;
+}
+
+.newfly {
+  font-size: small;
+}
+
+.newfly img {
+  margin-top: 0.5rem;
+  max-height: 1.5rem;
+}
+
+.mobile {
+  width: 100%;
+  display: flex;
+}
+
+.footericon {
+  justify-content: flex-start;
+  padding-top: 1rem;
+}
+
+.icon {
+  width: 1.8rem;
+  height: 1.8rem;
+  margin-right: 1rem;
+}
+
+.texto {
+  line-height: 25px;
+}
+
+.textoverde {
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 40px;
+  color: #29D66C;
+}
+
+
+.textobranco {
+  margin-top: 10px;
+  font-size: 36px;
+  font-weight: 600;
+  line-height: 35px;
+  color: #fff;
+}
+
+.textobranco2 {
+  margin-top: 10px;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 18px;
+  color: #fff;
+}
+
+.button {
+  width: 100%;
+  max-width: 12.8rem;
+  display: flex;
+  flex-direction: row;
+  padding: 1rem 1.5rem;
+  color: #29D66C;
+  font-size: 14px;
+  font-weight: 600;
+  background-color: #ffffff;
+  border-radius: 2rem;
+  border: none;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  cursor: pointer;
+}
+
+.button img {
+  max-width: 1rem;
+  width: 100%;
+  height: 1rem;
+}
+
+.partners {
+  width: 30rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  margin-top: 0.5rem;
+  z-index: 1000;
+}
+
+.partners li {
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.partners li img {
+  width: 5rem;
+  margin-bottom: 0.2rem;
+}
+
+
+
+
+@media only screen and (min-width: 216px) and (max-width: 926px) {
+  .mobile {
+    display: none;
+    position: absolute;
+  }
+
+  .interno {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 55rem;
+  }
+
+  .box {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .box_row {
+    margin-top: -0.5rem;
+    margin-bottom: 1rem;
+    text-align: center;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .social_media {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .social_media li svg {
+    fill: 000000;
+    display: flex;
+  }
+
+  .newfly img {
+    margin-top: 0.5rem;
+    max-height: 1.5rem;
+    margin-bottom: 2rem;
+  }
+
+  .footericon {
+    justify-content: flex-start;
+    padding-top: 0rem;
+  }
+
+  .icon {
+    margin-right: 0rem;
+  }
+}

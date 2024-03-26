@@ -1,0 +1,119 @@
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-primary: #000;
+  --color-secondary: #29D66C;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: Roboto;
+    background-color: #ffffff;
+    font-size: 15px;
+    font-weight: 400;
+    color: #000;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    overflow-x: hidden;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  transition: color 0.3s ease;
+  -webkit-transition: color 0.3s ease;
+  -moz-transition: color 0.3s ease;
+  -ms-transition: color 0.3s ease;
+  -o-transition: color 0.3s ease;
+}
+
+*,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+ol,
+li {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+section {
+  position: relative;
+  padding: 100px 0;
+}
+
+img {
+  max-width: 100%;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+p {
+  font-size: 18px;
+  line-height: 25px;
+  font-weight: 400;
+  margin-bottom: 15px;
+}
+
+h1 {
+  font-size: 64px;
+}
+
+h2 {
+  font-size: 48px;
+}
+
+h3 {
+  font-size: 36px;
+}
+
+h4 {
+  font-size: 24px;
+}
+
+
+.rec.rec-carousel-wrapper:focus,
+.rec.rec-carousel-wrapper .rec-carousel:focus,
+.rec.rec-carousel-wrapper .rec-slider-container:focus,
+.rec.rec-carousel-wrapper .rec-slider-container .rec-slider:focus,
+.rec.rec-carousel-wrapper .rec-slider-container .rec-slider div:focus {
+  outline: none;
+}
+
+.rec.rec-carousel-wrapper .rec-slider-container {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Arrow Styles */
+
+.rec.rec-carousel-wrapper .rec-carousel button {
+  background: #29D66C;
+  color: #fff;
+}
+
+.rec.rec-carousel-wrapper .rec-pagination .rec.rec-dot.rec {
+  box-shadow: none;
+  background: #29d66bd4;
+}
+
+.rec.rec-carousel-wrapper .rec-pagination .rec.rec-dot.rec.rec-dot_active {
+  background: #29D66C;
+}
+
+.MuiOutlinedInput-root {
+  border-radius: 0.2rem 1.2rem 1.2rem 1.2rem;
+}
