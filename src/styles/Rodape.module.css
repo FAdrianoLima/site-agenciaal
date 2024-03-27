@@ -1,12 +1,12 @@
 .background {
-  background-color: #393939;
+  background-color: #c62777;
   width: 100%;
   padding-top: 5rem;
   padding-bottom: 1rem;
   display: flex;
   justify-content: center;
   align-items: center;
-  color: #fff;
+  color: #000;
 }
 
 .interno {
@@ -163,25 +163,6 @@
   height: 1rem;
 }
 
-.partners {
-  width: 30rem;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: flex-start;
-  margin-top: 0.5rem;
-  z-index: 1000;
-}
-
-.partners li {
-  margin-left: 1rem;
-  margin-right: 1rem;
-}
-
-.partners li img {
-  width: 5rem;
-  margin-bottom: 0.2rem;
-}
 
 
 

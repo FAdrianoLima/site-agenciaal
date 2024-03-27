@@ -154,41 +154,10 @@ function Rodape() {
                 </li>
               </ul>
                 <img
-              src="/static/images/logo.png"
+              src="/static/images/logo-Horizontal.png"
               alt="Logo Branca"
               className={styles.logo}
               />
-               <ul className={styles.partners}>
-                <li>
-                      <img src="/static/images/rodape/google.png" />
-                </li>
-                <li>
-                      <img src="/static/images/rodape/ads.png" />
-                </li>
-                 <li>
-                      <img src="/static/images/rodape/analytics.png" />
-                </li>
-                 <li>
-                      <img src="/static/images/rodape/Appdev.png" />
-                </li>
-                 
-              </ul>
-
-              <ul className={styles.partners}>
-                <li>
-                       <img src="/static/images/rodape/meta.png" />
-                </li>
-                    <li>
-                      <img src="/static/images/rodape/facebook.png" />
-                </li>
-                 <li>
-                      <img src="/static/images/rodape/insta.png" />
-                </li>
-                
-                 <li>
-                      <img src="/static/images/rodape/aws.png" />
-                </li>
-              </ul>
             </div>
           </div>
           

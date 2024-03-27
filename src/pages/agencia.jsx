@@ -4,7 +4,6 @@ import Whats from "../components/whats";
 import styles from "../styles/Agencia.module.css";
 import Link from "next/link";
 import RodapeAl from "../components/rodape-al";
-import Equipe from "../components/equipe";
 
 export default function anewfly() {
   return (
@@ -15,7 +14,7 @@ export default function anewfly() {
           <div className={styles.box}></div>
 
           <div className={styles.box2}>
-            <img src="/static/images/a-newfly.png" alt="" />
+           
           </div>
         </div>
       </section>
@@ -103,7 +102,6 @@ export default function anewfly() {
       <section style={{ marginTop: "50px" }} className={styles.background}>
         <div className={styles.interno}></div>
       </section>
-      <Equipe />
 
       <section style={{ marginTop: "50px" }} className={styles.background}>
         <div className={styles.interno}>

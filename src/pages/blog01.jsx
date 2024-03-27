@@ -15,11 +15,6 @@ export default function Blog01() {
           <div className={styles.box}></div>
 
           <div className={styles.box2}>
-            <img
-              style={{ zIndex: "1234567" }}
-              src="/static/images/a-newfly.png"
-              alt=""
-            />
           </div>
         </div>
       </section>
@@ -47,7 +42,7 @@ export default function Blog01() {
                 &nbsp;&nbsp;&nbsp;&nbsp;
                 <img
                   style={{width:"100px"}}
-                src="/static/images/logo-cinza.png"
+                src="/static/images/Logo-Horizontal.png"
                 />
               </p>
 

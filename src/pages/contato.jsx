@@ -105,9 +105,6 @@ export default function Contato() {
       <section className={styles.background3} style={{ paddingBottom: "0px" }}>
        
           <div className={styles.interno3}>
-            <img
-              src="/static/images/contato.png"
-            />
           </div>
         
       </section>

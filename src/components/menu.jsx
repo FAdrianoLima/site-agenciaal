@@ -26,15 +26,6 @@ function Menu() {
     });
   }, []);
 
-  const [showSubMenu, setShowSubMenu] = React.useState(false);
-
-  function handleMouseEnter() {
-    setShowSubMenu(true);
-  };
-  
-  function handleMouseLeave() {
-    setShowSubMenu(false);
-  };
 
   function toggleMenu() {
     const nav = document.getElementById(`${styles.nav}`);
@@ -45,7 +36,7 @@ function Menu() {
   return (
     <div id={styles.menuheader} className={styles.header}>
       <div className={`${styles.interno}`}>
-        <img src="/static/images/Logo-Horizontal.png" alt="Logo horizontal" className={styles.logo} />
+        <img src="/static/images/Logo-Horizontal-branco.png" alt="Logo horizontal" className={styles.logo} />
 
         <button id={`${styles.btn_mobile}`}>
           <span id={`${styles.hamburguer}`}></span>
@@ -61,7 +52,7 @@ function Menu() {
             </Link>
           </li>
           <li>
-            <Link href="/a-newfly">
+            <Link href="/agencia">
               <a  >A Newfly</a>
             </Link>
           </li>
@@ -94,45 +85,6 @@ function Menu() {
           
           
         </ul>
-
-        <ul>
-          
-        <a
-          className={styles.button}
-          onMouseEnter={handleMouseEnter}
-          onMouseLeave={handleMouseLeave}
-        >
-          Hospedagem/Emails
-        </a>
-
-        {showSubMenu && (
-            <ul id={`${styles.submenu}`}
-            onMouseEnter={handleMouseEnter}
-          onMouseLeave={handleMouseLeave}
-            >
-              
-            <li>
-              <Link href="/hospedagem">
-                <a> <img src="/Hospedagem.png" />&nbsp; Hospedagem</a>
-              </Link>
-            </li>
-            <li>
-              <Link href="/emails">
-                <a> <img src="/Email.png" />&nbsp; Emails</a>
-              </Link>
-              </li>
-              <li>
-              <Link href="/emails">
-                <a> <img src="/Banco.png" />&nbsp; Banco de Dados</a>
-              </Link>
-              </li>
-              <Link href="/emails">
-                <a className={styles.consultoria}>&nbsp;&nbsp;&nbsp;&nbsp;Consultoria de dados&nbsp;&nbsp;&nbsp;</a>
-              </Link>
-          </ul>
-          )}
-          
-     </ul>
       
      <ul className={`${styles.social_media}`}>
           <li>

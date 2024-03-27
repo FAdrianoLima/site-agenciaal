@@ -15,11 +15,6 @@ export default function anewfly() {
           <div className={styles.box}></div>
 
           <div className={styles.box2}>
-            <img
-              style={{ zIndex: "1234567" }}
-              src="/static/images/a-newfly.png"
-              alt=""
-            />
           </div>
         </div>
       </section>

@@ -9,7 +9,6 @@
     width: 100%;
 }
 
-
 .interno {
     width: 100%;
     max-width: 100rem;
@@ -17,12 +16,6 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
-}
-
-.interno .logo {
-    width: 30rem;
-    -webkit-filter: drop-shadow(5px 5px 5px #222);
-    filter: drop-shadow(5px 5px 5px #222);
 }
 
 .box {
@@ -43,20 +36,9 @@
     font-weight: 500;
   }
 
-  .box h3 {
-    font-size: 20px;
-    font-weight: 600;
-  }
-
    .box h2 {
     font-size: 75px;
     font-weight: 600;
-  }
-
-  .box h1 {
-    font-size: 75px;
-    font-weight: 600;
-    text-transform: uppercase;
   }
 
   .box2 {
@@ -71,41 +53,6 @@
     overflow: hidden;
     z-index: 10;
   }
-   .box2 img {
-    margin-top: -3rem;
-    margin-bottom: -3rem;
-    height: 120vh;
-    width: 120vw;
-    overflow: hidden;
-    z-index: 10;
-  }
-
-  .partner {
-    margin-top: 10px;
-    justify-content: space-between;
-  }
-
-  .partner img {
-    max-width: 85px;
-    margin: 150px 15px 10px 0px;
-    z-index: 100;
-  }
-
-.div_seta_baixo {
-    position: absolute;
-    bottom:2rem;
-    animation: move-wheel 1.5s linear infinite;
-}
-    @keyframes move-wheel {
-        0% {
-            opacity: 0.2;
-            transform: translateY(-8px);
-        }
-        100% {
-            opacity: 1;
-            transform: translateY(8px);
-        }
-    }
 
     @media only screen and (min-width: 216px) and (max-width: 926px) {
       .background {
@@ -129,39 +76,6 @@
         flex-direction: column;
         z-index: 1234;
       }
-    
-      .box p {
-        font-size: small;
-      }
-        
-      .box2 {
-        margin-top: -50rem;
-        margin-bottom: -22rem;
-        margin-left: 0rem;
-        height: 120vh;
-        width: 100%;
-        max-width: 80rem;
-        z-index: 123;
-      }
-       .box2 img {
-        height: 100vh;
-        min-width: 80rem;
-        z-index: 123;
-      }
-
-      .partner {
-        margin-top: 0px;
-        justify-content: space-between;
-        display: flex;
-        flex-direction: row;
-      }
-      
-      .partner img {
-        max-width: 50px;
-        margin: 80px 10px 0px 0px;
-        z-index: 100;
-      }
-
       
     }
     

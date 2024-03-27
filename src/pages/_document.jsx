@@ -12,13 +12,13 @@ class DocumentosSite extends Document {
       <Html>
         <Head>
           <link rel="icon" href="/favicon.png" />
-          <title>Newfly Digital</title>
-          <meta name="description" content="Newfly Digital" />
+          <title>Agência AL</title>
+          <meta name="description" content="Agência AL" />
           <meta
             name="keywords"
             content=" "
           />
-          <meta name="author" content="NewFly Digital" />
+          <meta name="author" content="Agência AL" />
           <link
             rel="stylesheet"
             href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
