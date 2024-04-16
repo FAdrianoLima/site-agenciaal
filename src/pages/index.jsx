@@ -48,7 +48,6 @@ export default function Home() {
           <img src="/static/images/parceiros/logo-flowsistem.png" />
           <img src="/static/images/parceiros/logo-gov.png" />
 
-
           <img src="/static/images/parceiros/logo-apolo.png" />
           <img src="/static/images/parceiros/logo-bandesul.png" />
           <img src="/static/images/parceiros/logo-biocenter.png" />
