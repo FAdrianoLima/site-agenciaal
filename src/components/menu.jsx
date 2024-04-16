@@ -47,25 +47,25 @@ function Menu() {
           className={`${styles.menu} ${styles.navbar} ${styles.a2} `}
         >
           <li>
-            <Link href="/">
+            <Link legacyBehavior  href="/">
               <a> Home</a>
             </Link>
           </li>
           <li>
-            <Link href="/agencia">
+            <Link legacyBehavior  href="/agencia">
               <a  >A Newfly</a>
             </Link>
           </li>
 
           <li>
-            <Link href="/#servicos">
+            <Link legacyBehavior  href="/#servicos">
               <a  >Serviços</a>
             </Link>
           </li>
 
 
           <li >
-            <Link href="/cases">
+            <Link legacyBehavior  href="/cases">
               <a>Cases</a>
             </Link>
           </li>
@@ -73,12 +73,12 @@ function Menu() {
 
 
           <li>
-            <Link href="/blog">
+            <Link legacyBehavior  href="/blog">
               <a  >Blog</a>
             </Link>
           </li>
           <li>
-            <Link href="/contato">
+            <Link legacyBehavior  href="/contato">
               <a  >Contato</a>
             </Link>
           </li>
@@ -88,21 +88,21 @@ function Menu() {
       
      <ul className={`${styles.social_media}`}>
           <li>
-            <Link href="https://www.facebook.com/newfly.digital">
+            <Link legacyBehavior  href="https://www.facebook.com/newfly.digital">
               <a target="_blank">
                 <img src="/facebook.png"></img>
               </a>
             </Link>
           </li>
           <li>
-            <Link href="https://www.instagram.com/al_agencia_de_marketing/">
+            <Link legacyBehavior  href="https://www.instagram.com/al_agencia_de_marketing/">
               <a target="_blank">
                 <img src="/Instagram.png"></img>
               </a>
             </Link>
           </li>
           <li>
-            <Link href="https://www.linkedin.com/company/al-agência-de-marketing/">
+            <Link legacyBehavior  href="https://www.linkedin.com/company/al-agência-de-marketing/">
               <a target="_blank">
                 <img src="/LinkedIn.png"></img>
               </a>

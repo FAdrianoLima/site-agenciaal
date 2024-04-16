@@ -41,7 +41,7 @@ export default function anewfly() {
 
       <section style={{ marginTop: "100px" }} className={styles.background}>
         <div style={{ alignItems: "flex-start" }} className={styles.interno2}>
-          <p style={{ fontWeight: "600", fontSize: "22px", color: "#29D66C" }}>
+          <p style={{ fontWeight: "600", fontSize: "22px", color: "#28B3C7" }}>
             Somos uma agência Completa
           </p>
           <p
@@ -166,7 +166,7 @@ export default function anewfly() {
           className={styles.box}
         >
           <p style={{ fontSize: "32px", marginBottom:"3rem" }}>
-            o que exatamente <b style={{ color: "#29D66C" }}>nós fazemos</b>
+            o que exatamente <b style={{ color: "#28B3C7" }}>nós fazemos</b>
           </p>
           <p style={{ fontSize: "46px", lineHeight: "48px" }}>
             Estudamos o seu negócio e posicionamos ele através de vários
@@ -174,7 +174,7 @@ export default function anewfly() {
             <b> tranformar seus resultados digitais.</b>
           </p>
           <span className={styles.linha} />
-          <p style={{ fontSize: "64px", fontWeight: "600", color: "#29D66C" }}>
+          <p style={{ fontSize: "64px", fontWeight: "600", color: "#28B3C7" }}>
             digital 360
           </p>
 

@@ -36,7 +36,7 @@ export default function anewfly() {
       <section className={styles.background} style={{ marginBottom: "10rem" }}>
         <div className={styles.interno} style={{ maxWidth: "100rem" }}>
           <div className={`${styles.images} `}>
-            <Link href="/allora">
+            <Link legacyBehavior  href="/allora">
               <a className={styles.img}>
                 <div className={styles.bg}>
                   <p>asdasdsa</p>
@@ -48,7 +48,7 @@ export default function anewfly() {
               </a>
             </Link>
 
-            <Link href="/hanisch">
+            <Link legacyBehavior  href="/hanisch">
               <a className={styles.img}>
                 <div className={styles.bg}>
                   <p>asdasdsa</p>
@@ -59,7 +59,7 @@ export default function anewfly() {
                 </div>
               </a>
             </Link>
-            <Link href="/rpp">
+            <Link legacyBehavior  href="/rpp">
               <a className={styles.img}>
                 <div className={styles.bg}>
                   <p>asdasdsa</p>
@@ -70,7 +70,7 @@ export default function anewfly() {
                 </div>
               </a>
             </Link>
-            <Link href="/mercatto">
+            <Link legacyBehavior  href="/mercatto">
               <a className={styles.img}>
                 <div className={styles.bg}>
                   <p>asdasdsa</p>
@@ -88,7 +88,7 @@ export default function anewfly() {
 
       <section className="w-full flex justify-center items-center mt-[1rem]">
         <div className={styles.blococonteudo}>
-        <Link href="/allora">
+        <Link legacyBehavior  href="/allora">
           <div className={styles.box}>
           <p>Allora Jóias</p>
             <div className={styles.boxcontent}
@@ -96,7 +96,7 @@ export default function anewfly() {
             ></div>
           </div>
           </Link>
-          <Link href="/hanisch">
+          <Link legacyBehavior  href="/hanisch">
           <div className={styles.box}>
           <p>Hanisch Medical</p>
             <div className={styles.boxcontent}
@@ -104,7 +104,7 @@ export default function anewfly() {
             ></div>
           </div>
           </Link>
-          <Link href="/mercatto">
+          <Link legacyBehavior  href="/mercatto">
           <div className={styles.box}>
           <p>Mercatto</p>
             <div className={styles.boxcontent}
@@ -112,7 +112,7 @@ export default function anewfly() {
             ></div>
           </div>
           </Link>
-          <Link href="/rpp">
+          <Link legacyBehavior  href="/rpp">
           <div className={styles.box}>
           <p>RPP Construtora</p>
             <div className={styles.boxcontent}
@@ -120,7 +120,7 @@ export default function anewfly() {
             ></div>
           </div>
           </Link>
-          <Link href="/mercatto">
+          <Link legacyBehavior  href="/mercatto">
           <div className={styles.box}>
           <p>Mercatto</p>
             <div className={styles.boxcontent}
@@ -128,7 +128,7 @@ export default function anewfly() {
             ></div>
           </div>
           </Link>
-          <Link href="/mercatto">
+          <Link legacyBehavior  href="/mercatto">
           <div className={styles.box}>
           <p>Mercato</p>
             <div className={styles.boxcontent}

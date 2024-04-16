@@ -3,7 +3,7 @@
 
 :root {
   --color-primary: #000;
-  --color-secondary: #29D66C;
+  --color-secondary: #28B3C7;
 }
 
 html,
@@ -101,7 +101,7 @@ h4 {
 /* Arrow Styles */
 
 .rec.rec-carousel-wrapper .rec-carousel button {
-  background: #29D66C;
+  background: #28B3C7;
   color: #fff;
 }
 
@@ -111,7 +111,7 @@ h4 {
 }
 
 .rec.rec-carousel-wrapper .rec-pagination .rec.rec-dot.rec.rec-dot_active {
-  background: #29D66C;
+  background: #28B3C7;
 }
 
 .MuiOutlinedInput-root {

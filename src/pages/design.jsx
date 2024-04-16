@@ -51,13 +51,13 @@ export default function Design() {
               <p style={{marginTop:"2rem"}}>
               O Design de Interface de Usuário (UI) envolve a criação de interfaces visuais atraentes e fáceis de usar para os usuários finais. Nossa equipe pode ajudá-lo a projetar uma interface de usuário que se adapte às necessidades do seu público-alvo e melhore a experiência do usuário em geral.
               </p>
-              <Link href="/contato">
+              <Link legacyBehavior  href="/contato">
               <button className={styles.button1}>
                 Quero!
                 </button>
               </Link>
               &nbsp;&nbsp;&nbsp;&nbsp;
-              <Link href="/cases"> 
+              <Link legacyBehavior  href="/cases"> 
               <button className={styles.button2}>
               Conheça nossos Cases de Sucesso
               </button>
@@ -74,13 +74,13 @@ export default function Design() {
               <p style={{marginTop:"2rem"}}>
               O Design de Experiência do Usuário (UX) é uma abordagem centrada no usuário que envolve a criação de experiências de usuário que sejam intuitivas e agradáveis. Nossa equipe pode ajudá-lo a projetar uma experiência do usuário que se adapte às necessidades do seu público-alvo e promova a interação com a sua aplicação.
               </p>
-              <Link href="/contato">
+              <Link legacyBehavior  href="/contato">
               <button className={styles.button1}>
                 Quero um UX!
                 </button>
               </Link>
               &nbsp;&nbsp;&nbsp;&nbsp;
-              <Link href="/cases"> 
+              <Link legacyBehavior  href="/cases"> 
               <button className={styles.button2}>
               Conheça nossos Cases de Sucesso
               </button>
@@ -108,13 +108,13 @@ export default function Design() {
               <p style={{marginTop:"2rem"}}>
               A Arquitetura de Software é a estrutura subjacente que suporta uma aplicação. O Design de Arquitetura de Software envolve a criação de uma estrutura sólida e escalável que possa lidar com as demandas do seu negócio. Nossa equipe de especialistas pode ajudá-lo a projetar uma arquitetura de software que se adapte às necessidades do seu negócio e promova um desempenho consistente.
               </p>
-              <Link href="/contato">
+              <Link legacyBehavior  href="/contato">
               <button className={styles.button1}>
                 Quero!
                 </button>
               </Link>
               &nbsp;&nbsp;&nbsp;&nbsp;
-              <Link href="/cases"> 
+              <Link legacyBehavior  href="/cases"> 
               <button className={styles.button2}>
               Conheça nossos Cases de Sucesso
               </button>
@@ -131,13 +131,13 @@ export default function Design() {
               <p style={{marginTop:"2rem"}}>
               Oferecemos serviços personalizados de Design de Software que atendam às necessidades específicas do seu negócio. Podemos trabalhar com você para projetar uma solução personalizada que atenda às suas necessidades exclusivas e promova o crescimento do seu negócio. Nossa equipe de especialistas em Design de Software pode ajudá-lo a criar uma solução que seja única e atenda às suas necessidades comerciais.
               </p>
-              <Link href="/contato">
+              <Link legacyBehavior  href="/contato">
               <button className={styles.button1}>
                 Quero um app
                 </button>
               </Link>
               &nbsp;&nbsp;&nbsp;&nbsp;
-              <Link href="/cases"> 
+              <Link legacyBehavior  href="/cases"> 
               <button className={styles.button2}>
               Conheça nossos Cases de Sucesso
               </button>

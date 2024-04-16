@@ -3,8 +3,8 @@ import Menu from "../components/menu";
 import Rodape from "../components/rodape";
 import Whats from "../components/whats";
 import RodapeAl from "../components/rodape-al";
-import styles from "../styles/Quemsomos.module.css";
-import "../styles/Quemsomos.module.css";
+import styles from "../styles/Index.module.css";
+import "../styles/Index.module.css";
 import React, { useState } from "react";
 import Link from "next/link";
 
@@ -20,6 +20,88 @@ export default function Home() {
       <Menu />
       <a id="banner"></a>
       <Banner />
+      <section className={`${styles.background2} `}>
+        <div className={styles.carrossel}>
+          <img src="/static/images/parceiros/logo-apolo.png" />
+          <img src="/static/images/parceiros/logo-bandesul.png" />
+          <img src="/static/images/parceiros/logo-biocenter.png" />
+          <img src="/static/images/parceiros/logo-casaforte.png" />
+          <img src="/static/images/parceiros/logo-casanobre.png" />
+          <img src="/static/images/parceiros/logo-citydata.png" />
+          <img src="/static/images/parceiros/logo-copacabana.png" />
+          <img src="/static/images/parceiros/logo-embrar.png" />
+          <img src="/static/images/parceiros/logo-esteticloc.png" />
+          <img src="/static/images/parceiros/logo-fermaqsul.png" />
+          <img src="/static/images/parceiros/logo-flowsistem.png" />
+          <img src="/static/images/parceiros/logo-gov.png" />
+
+          <img src="/static/images/parceiros/logo-apolo.png" />
+          <img src="/static/images/parceiros/logo-bandesul.png" />
+          <img src="/static/images/parceiros/logo-biocenter.png" />
+          <img src="/static/images/parceiros/logo-casaforte.png" />
+          <img src="/static/images/parceiros/logo-casanobre.png" />
+          <img src="/static/images/parceiros/logo-citydata.png" />
+          <img src="/static/images/parceiros/logo-copacabana.png" />
+          <img src="/static/images/parceiros/logo-embrar.png" />
+          <img src="/static/images/parceiros/logo-esteticloc.png" />
+          <img src="/static/images/parceiros/logo-fermaqsul.png" />
+          <img src="/static/images/parceiros/logo-flowsistem.png" />
+          <img src="/static/images/parceiros/logo-gov.png" />
+
+
+          <img src="/static/images/parceiros/logo-apolo.png" />
+          <img src="/static/images/parceiros/logo-bandesul.png" />
+          <img src="/static/images/parceiros/logo-biocenter.png" />
+          <img src="/static/images/parceiros/logo-casaforte.png" />
+          <img src="/static/images/parceiros/logo-casanobre.png" />
+          <img src="/static/images/parceiros/logo-citydata.png" />
+          <img src="/static/images/parceiros/logo-copacabana.png" />
+          <img src="/static/images/parceiros/logo-embrar.png" />
+          <img src="/static/images/parceiros/logo-esteticloc.png" />
+          <img src="/static/images/parceiros/logo-fermaqsul.png" />
+          <img src="/static/images/parceiros/logo-flowsistem.png" />
+          <img src="/static/images/parceiros/logo-gov.png" />
+
+          <img src="/static/images/parceiros/logo-apolo.png" />
+          <img src="/static/images/parceiros/logo-bandesul.png" />
+          <img src="/static/images/parceiros/logo-biocenter.png" />
+          <img src="/static/images/parceiros/logo-casaforte.png" />
+          <img src="/static/images/parceiros/logo-casanobre.png" />
+          <img src="/static/images/parceiros/logo-citydata.png" />
+          <img src="/static/images/parceiros/logo-copacabana.png" />
+          <img src="/static/images/parceiros/logo-embrar.png" />
+          <img src="/static/images/parceiros/logo-esteticloc.png" />
+          <img src="/static/images/parceiros/logo-fermaqsul.png" />
+          <img src="/static/images/parceiros/logo-flowsistem.png" />
+          <img src="/static/images/parceiros/logo-gov.png" />
+
+          <img src="/static/images/parceiros/logo-apolo.png" />
+          <img src="/static/images/parceiros/logo-bandesul.png" />
+          <img src="/static/images/parceiros/logo-biocenter.png" />
+          <img src="/static/images/parceiros/logo-casaforte.png" />
+          <img src="/static/images/parceiros/logo-casanobre.png" />
+          <img src="/static/images/parceiros/logo-citydata.png" />
+          <img src="/static/images/parceiros/logo-copacabana.png" />
+          <img src="/static/images/parceiros/logo-embrar.png" />
+          <img src="/static/images/parceiros/logo-esteticloc.png" />
+          <img src="/static/images/parceiros/logo-fermaqsul.png" />
+          <img src="/static/images/parceiros/logo-flowsistem.png" />
+          <img src="/static/images/parceiros/logo-gov.png" />
+
+          <img src="/static/images/parceiros/logo-apolo.png" />
+          <img src="/static/images/parceiros/logo-bandesul.png" />
+          <img src="/static/images/parceiros/logo-biocenter.png" />
+          <img src="/static/images/parceiros/logo-casaforte.png" />
+          <img src="/static/images/parceiros/logo-casanobre.png" />
+          <img src="/static/images/parceiros/logo-citydata.png" />
+          <img src="/static/images/parceiros/logo-copacabana.png" />
+          <img src="/static/images/parceiros/logo-embrar.png" />
+          <img src="/static/images/parceiros/logo-esteticloc.png" />
+          <img src="/static/images/parceiros/logo-fermaqsul.png" />
+          <img src="/static/images/parceiros/logo-flowsistem.png" />
+          <img src="/static/images/parceiros/logo-gov.png" />
+        </div>
+      </section>
 
       <section
         id="quemSomos"
@@ -32,8 +114,8 @@ export default function Home() {
             style={{ marginLeft: "2rem" }}
           >
             <h3>
-              Somos uma <spam style={{ color: "#29D66C" }}>agência 360º</spam> e{" "}
-              <spam style={{ color: "#29D66C" }}>software house</spam>, com
+              Somos uma <spam style={{ color: "#28B3C7" }}>agência 360º</spam> e{" "}
+              <spam style={{ color: "#28B3C7" }}>software house</spam>, com
               experiência para fazer o seu negócio ter{" "}
             </h3>
             <div className={styles.bloco}>muito mais resultados.</div>
@@ -63,7 +145,6 @@ export default function Home() {
               ></iframe>
             </div>
           </div>
-          
         </div>
       </section>
 
@@ -73,21 +154,19 @@ export default function Home() {
             className={`${styles.box} ${styles.texto}`}
             style={{ marginLeft: "2rem" }}
           >
-            <p>
-              <h2>
-                <spam style={{ color: "#29D66C" }}>Marcas que comprovam</spam>{" "}
-              </h2>
+            
+              <spam style={{ color: "#28B3C7" }}>Marcas que comprovam</spam>{" "}
               <h3 style={{ fontSize: "36px", marginTop: "10px" }}>
                 os nossos resultados
               </h3>
-            </p>
+            
           </div>
         </div>
       </section>
 
       <section className={styles.background3}>
         <div className={styles.interno3}>
-          <Link href="/tecnologia">
+          <Link legacyBehavior href="/tecnologia">
             <div className={styles.opcoes}>
               <div className={`${styles.caixa1} `}>
                 <p className="ml-[4rem]">
@@ -98,7 +177,7 @@ export default function Home() {
             </div>
           </Link>
 
-          <Link href="/design">
+          <Link legacyBehavior href="/design">
             <div className={styles.opcoes}>
               <div className={`${styles.caixa2} `}>
                 <p className="ml-[4rem]">
@@ -111,7 +190,7 @@ export default function Home() {
         </div>
 
         <div className={styles.interno3}>
-          <Link href="/inovacao">
+          <Link legacyBehavior href="/inovacao">
             <div className={styles.opcoes}>
               <div className={`${styles.caixa3} `}>
                 <p className="ml-[4rem]">
@@ -122,7 +201,7 @@ export default function Home() {
             </div>
           </Link>
 
-          <Link href="/ia">
+          <Link legacyBehavior href="/ia">
             <div className={styles.opcoes}>
               <div className={`${styles.caixa4} `}>
                 <p className="ml-[4rem]">

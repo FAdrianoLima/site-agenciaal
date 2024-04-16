@@ -76,21 +76,21 @@ export default function Blog01() {
 
               <ul className={`${styles.social_media}`}>
           <li>
-            <Link href="https://www.facebook.com/newfly.digital">
+            <Link legacyBehavior  href="https://www.facebook.com/newfly.digital">
               <a target="_blank">
                 <img src="/facebook-verde.png"></img>
               </a>
             </Link>
           </li>
           <li>
-            <Link href="https://www.instagram.com/newflydigital/">
+            <Link legacyBehavior  href="https://www.instagram.com/newflydigital/">
               <a target="_blank">
                 <img src="/Instagram-verde.png"></img>
               </a>
             </Link>
           </li>
           <li>
-            <Link href="https://www.linkedin.com/company/newflydigital/">
+            <Link legacyBehavior  href="https://www.linkedin.com/company/newflydigital/">
               <a target="_blank">
                 <img src="/LinkedIn-verde.png"></img>
               </a>

@@ -84,7 +84,7 @@ export default function Allora() {
           <span style={{margin:"5rem 0rem"}}></span>
 
           <p style={{ display:"flex", alignItems:"flex-start"}}>
-          <p style={{ color: "#29D66C", fontWeight: "600", fontSize: "24px"}}>Logotipo</p>
+          <p style={{ color: "#28B3C7", fontWeight: "600", fontSize: "24px"}}>Logotipo</p>
           <img src="/static/images/cases/allora-02.png" alt="" />
           </p>
 
@@ -104,7 +104,7 @@ export default function Allora() {
             </div>
             <div className={styles.box} style={{marginTop:"10rem"}}>
               <p><b style={{fontSize:"24px"}}>Cliente</b>
-                <h3 style={{color:"#29D66C", fontSize:"36px", fontWeight:"600"}}>ALLORA JOIAS</h3>
+                <h3 style={{color:"#28B3C7", fontSize:"36px", fontWeight:"600"}}>ALLORA JOIAS</h3>
              
               <p style={{marginTop:"2rem"}}>Criação de Identidade</p>
                 <p>Desenvolvimento do Logo</p>

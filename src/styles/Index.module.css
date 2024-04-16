@@ -22,12 +22,14 @@
 }
 
 .background2 {
-  background-color: #ffffff;
+  background-color: #e3e3e3;
+  width: 100%;
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
   display: flex;
   justify-content: center;
   align-items: center;
-  color: 000000;
-  z-index: 1000;
+  color: #000000;
 }
 
 .interno {
@@ -94,6 +96,42 @@
   line-height: 30px;
 }
 
+.carrossel {
+  display: flex;
+  scroll-snap-type: x mandatory; /* Define o scroll snap para mover uma imagem por vez */
+  scroll-behavior: smooth; /* Adiciona um efeito de rolagem suave */
+  width: 100%;
+  padding: 0px 0px;
+  flex-direction: row;
+}
+
+.carrossel img {
+  flex: 0 0 auto;
+  width: 100%; /* Ajuste o tamanho das imagens conforme necessário */
+  max-width: 10rem;
+  height: auto;
+  margin: 0px 10px;
+  scroll-snap-align: start; /* Alinha as imagens ao início da viewport */
+}
+
+/* Animação do carrossel */
+@keyframes slide {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.carrossel img {
+  animation: slide 5s linear infinite; /* Define a animação de slide */
+}
+
+.carrossel:hover img {
+  animation-play-state: paused; /* Pausa a animação quando o mouse estiver sobre o carrossel */
+}
+
 .video {
   background-image: url(/static/images/quem-somos/quem-somos.png);
   background-size: cover;
@@ -127,7 +165,7 @@
 }
 
 .box:hover .bloco {
-  background-color:  #29D66C;
+  background-color:  #28B3C7;
   color: #ffffff;
   font-size: 30px;
   padding: 0.4rem 0.8rem;
@@ -137,7 +175,7 @@
 }
 
 .bloco2 {
-  background-color:  #29D66C;
+  background-color:  #28B3C7;
   color: #000;
   font-size: 30px;
   padding: 2rem 3rem;
@@ -197,7 +235,7 @@
 
 .lista:hover{
   font-weight: 500;
-  background-color:  #29D66C;
+  background-color:  #28B3C7;
   color: #ffffff;
   padding: 0.4rem 0.8rem;
   margin-left: -0.8rem;
@@ -337,7 +375,7 @@
 }
 
 .opcoes:hover p {
-  color: #29D66C;
+  color: #28B3C7;
   transition: color 0.5s;
   transform: translateY(0);
 }
@@ -382,7 +420,7 @@
 
 
 .linhaverde {
-  background-color: #29D66C;
+  background-color: #28B3C7;
   width: 60rem;
   height: 50rem;
   margin-top: -55rem;
@@ -453,7 +491,7 @@
   }
 
   .linhaverde {
-    background-color: #29D66C;
+    background-color: #28B3C7;
     width: 26rem;
     height: 72rem;
     margin-top: -80rem;

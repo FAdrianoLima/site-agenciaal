@@ -130,7 +130,7 @@
 }
 
 .titulo {
-  color: #29D66C;
+  color: #28B3C7;
 }
 
 .images {
@@ -147,7 +147,7 @@
   width: 30rem;
   height: 25rem;
   transition: all 1s;
-  background-color: #29D66C;
+  background-color: #28B3C7;
 }
 
 .img .bg {
@@ -183,7 +183,7 @@
 }
 
 .verdin {
-  background-color: #29D66C;
+  background-color: #28B3C7;
   background-size: cover;
   width: 23rem;
   height: 22rem;
@@ -219,8 +219,8 @@
   height: 1rem;
   width: 10rem;
   border-radius: 3rem;
-  color: #29D66C;
-  background-color: #29D66C;
+  color: #28B3C7;
+  background-color: #28B3C7;
   margin-top: 4rem;
   margin-bottom: 5rem;
 }
@@ -235,7 +235,7 @@
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  background-color: #29D66C;
+  background-color: #28B3C7;
 }
 
 .blococonteudo .box {
@@ -253,9 +253,9 @@
   position: absolute;
   bottom: 0;
   right: 0;
-  background: #29D66C;
+  background: #28B3C7;
   transition: 0.3s;
-  border: 0px solid #29D66C;
+  border: 0px solid #28B3C7;
   color: #fff;
   display: flex;
   justify-content: center;
@@ -281,7 +281,7 @@
   content: "";
   position: absolute;
   z-index: -1;
-  background: #29D66C;
+  background: #28B3C7;
   -webkit-transition: 0.3s;
   -o-transition: 0.3s;
   transition: 0.3s;

@@ -6,12 +6,11 @@ function Banner() {
     <section className={styles.background}>
       <div className={styles.interno}>
         <div className={styles.box}>
-          <h2>Ative o <spam style={{color:"#00E7AA"}}>novo</spam></h2>
-          <h4>Somos <spam style={{ color: "#00E7AA", fontWeight: "300" }}>a agência digital que vai <br />acelerar</spam> sua transformação digital.</h4>
-          
-        </div>
-
-         <div className={styles.box2}>
+          <h2>A sua <spam style={{color:"#d82087"}}>agência</spam></h2>
+          <h4>Somos <spam style={{ color: "#d82087", fontWeight: "300" }}>a agência digital que vai acelerar</spam> sua transformação digital.</h4>
+          <img
+          src="/static/images/risco.png"
+          />
         </div>
           </div>
     </section>

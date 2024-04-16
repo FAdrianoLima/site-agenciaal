@@ -65,7 +65,7 @@ function Rodape() {
             <div
               className={` ${styles.box_row} ${styles.textobranco}`}
             >
-              <Link href="/contato">
+              <Link legacyBehavior  href="/contato">
               <button className={styles.button}>
                <img src="/static/images/seta.png" /> &nbsp; Entre em Contato
                 </button>
@@ -125,28 +125,28 @@ function Rodape() {
             <div className={styles.box} >
               <ul className={styles.social_media}>
                 <li>
-                  <Link href="https://www.facebook.com/newfly.digital">
+                  <Link legacyBehavior  href="https://www.facebook.com/newfly.digital">
                     <a>
                       <img src="/facebook.png"></img>
                     </a>
                   </Link>
                 </li>
                 <li>
-                  <Link href="https://www.instagram.com/newflydigital/">
+                  <Link legacyBehavior  href="https://www.instagram.com/newflydigital/">
                     <a>
                       <img src="/Instagram.png"></img>
                     </a>
                   </Link>
                 </li>
                 <li>
-                  <Link href="https://www.linkedin.com/company/newflydigital/about/">
+                  <Link legacyBehavior  href="https://www.linkedin.com/company/newflydigital/about/">
                     <a>
                       <img src="/LinkedIn.png"></img>
                     </a>
                   </Link>
                 </li>
                 <li>
-                  <Link href="https://api.whatsapp.com/send?phone=5554999715856">
+                  <Link legacyBehavior  href="https://api.whatsapp.com/send?phone=5554999715856">
                     <a target="_blank">
                       
                     </a>

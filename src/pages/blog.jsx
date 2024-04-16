@@ -36,7 +36,7 @@ export default function Blog() {
       </section>
 
       <section style={{ marginTop: "-130px" }} className={styles.background}>
-      <Link href="/blog05">
+      <Link legacyBehavior  href="/blog05">
         <div className={styles.interno2}>
          
             <img
@@ -54,7 +54,7 @@ export default function Blog() {
 
       <section style={{ marginTop: "-100px" }} className={styles.background}>
         <div className={styles.interno}>
-          <Link href="/blog02">
+          <Link legacyBehavior  href="/blog02">
           <div className={styles.blog}>
             <img
             src="/static/images/blog/blog-02.png"
@@ -67,7 +67,7 @@ export default function Blog() {
           </div>
           </Link>
 
-          <Link href="/blog05">
+          <Link legacyBehavior  href="/blog05">
           <div className={styles.blog}>
             <img
             src="/static/images/blog/blog-05.png"
@@ -80,7 +80,7 @@ export default function Blog() {
           </div>
           </Link>
 
-          <Link href="/blog01">
+          <Link legacyBehavior  href="/blog01">
           <div className={styles.blog}>
             <img
             src="/static/images/blog/blog-01.png"
@@ -99,7 +99,7 @@ export default function Blog() {
                           */}
       <section style={{ marginTop: "-100px" }} className={styles.background}>
         <div className={styles.interno}>
-          <Link href="/blog02">
+          <Link legacyBehavior  href="/blog02">
           <div className={styles.blog}>
             <img
             src="/static/images/blog/blog-02.png"
@@ -112,7 +112,7 @@ export default function Blog() {
           </div>
           </Link>
 
-          <Link href="/blog03">
+          <Link legacyBehavior  href="/blog03">
           <div className={styles.blog}>
             <img
             src="/static/images/blog/blog-03.png"
@@ -125,7 +125,7 @@ export default function Blog() {
           </div>
           </Link>
 
-          <Link href="/blog04">
+          <Link legacyBehavior  href="/blog04">
           <div className={styles.blog}>
             <img
             src="/static/images/blog/blog-04.png"

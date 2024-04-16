@@ -26,7 +26,7 @@ const theme = createTheme({
       main: "#322783",
     },
     secondary: {
-      main: "#29D66C",
+      main: "#28B3C7",
     },
   },
 });
@@ -264,7 +264,7 @@ CEP 98052-590 | Caxias do Sul</p>
                       type="submit"
                       fullWidth
                       variant="contained"
-                      className="bg-[#29D66C] hover:bg-[#25c262] text-white mx-[.5rem] p-4 mt-2 font-bold border-0  cursor-pointer"
+                      className="bg-[#28B3C7] hover:bg-[#25c262] text-white mx-[.5rem] p-4 mt-2 font-bold border-0  cursor-pointer"
                       sx={{ marginLeft: 0, marginRight: 0 }}
                       disabled={disableButton}
                     >
