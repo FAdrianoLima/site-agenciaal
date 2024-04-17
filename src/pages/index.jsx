@@ -169,7 +169,7 @@ export default function Home() {
             <div className={styles.opcoes}>
               <div className={`${styles.caixa1} `}>
                 <p className="ml-[4rem]">
-                  <p>Tecnologia</p>
+                  <spam>Tecnologia</spam>
                   <span>aplicativos, websites e sistemas personalizados</span>
                 </p>
               </div>
@@ -180,7 +180,7 @@ export default function Home() {
             <div className={styles.opcoes}>
               <div className={`${styles.caixa2} `}>
                 <p className="ml-[4rem]">
-                  <p>Design e Criação</p>
+                  <spam>Design e Criação</spam>
                   <span>criatividade e arquitetura para négocios digitais</span>
                 </p>
               </div>
@@ -193,7 +193,7 @@ export default function Home() {
             <div className={styles.opcoes}>
               <div className={`${styles.caixa3} `}>
                 <p className="ml-[4rem]">
-                  <p>Inovação</p>
+                  <spam>Inovação</spam>
                   <span>consultoria para a sua tranformação digital</span>
                 </p>
               </div>
@@ -204,7 +204,7 @@ export default function Home() {
             <div className={styles.opcoes}>
               <div className={`${styles.caixa4} `}>
                 <p className="ml-[4rem]">
-                  <p>Inteligência Artificial</p>
+                  <spam>Inteligência Artificial</spam>
                   <span>
                     Somos especializados em desenvolvimento de plataformas
                     digitais personalizadas que incorporam tecnologias de
