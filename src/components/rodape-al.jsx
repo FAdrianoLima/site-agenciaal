@@ -11,7 +11,11 @@ export default function RodapeNewFly() {
         </span>
         <Link legacyBehavior  href="https://www.instagram.com/al_agencia_de_marketing">
           <a target="_blank">
-          AL Agência de Marketing
+          <img
+          className="w-full max-w-[5rem]"
+          src="/static/images/Logo-Horizontal.png"
+          alt="AL Agência de Marketing"
+          />
           </a>
         </Link>
       </div>

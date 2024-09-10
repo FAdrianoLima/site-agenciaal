@@ -20,7 +20,7 @@ export default function Home() {
       <Menu />
       <a id="banner"></a>
       <Banner />
-      <section className={`${styles.background2} `}>
+      <section className={`${styles.bgcarroussel} `}>
         <div className={styles.carrossel}>
           <img src="/static/images/parceiros/logo-apolo.png" />
           <img src="/static/images/parceiros/logo-bandesul.png" />
@@ -104,7 +104,7 @@ export default function Home() {
 
       <section
         id="quemSomos"
-        style={{ paddingBottom: "0px", paddingTop: "100px" }}
+        style={{ paddingBottom: "100px", paddingTop: "100px" }}
         className={styles.background}
       >
         <div className={styles.interno}>
@@ -113,18 +113,15 @@ export default function Home() {
             style={{ marginLeft: "2rem" }}
           >
             <h3>
-              Somos uma <spam style={{ color: "#28B3C7" }}>agência 360º</spam> e{" "}
-              <spam style={{ color: "#28B3C7" }}>software house</spam>, com
-              experiência para fazer o seu negócio ter{" "}
+              Somos uma <spam style={{ color: "#28B3C7" }}>agência 360º</spam> com
+              experiência para fazer o seu negócio ter o{" "}
             </h3>
-            <div className={styles.bloco}>muito mais resultados.</div>
+            <div className={styles.bloco}>Sucesso que você quer!</div>
             <p>
-              Combinamos estratégia, design, comunicação e tecnologia em
-              marketing para oferecer aos nossos clientes uma vantagem
-              competitiva pela transformação digital da sua empresa, assim
-              focando no resultado perante o mercado. Com vídeos, apps, sites,
-              materiais impressos pensados em ações online eficientes levamos ao
-              mercado sua marca de forma diferenciada.
+              Transformar o seu negócio em um projeto lucrativo é um desafio que a
+              atual geração digital busca incansavelmente. Saber administrar
+              influência digital com transparência e autoridade é o nosso
+              principal objetivo!
             </p>
           </div>
 
@@ -132,34 +129,11 @@ export default function Home() {
             className={`${styles.box}`}
             style={{ maxWidth: "40rem", marginTop: "2rem" }}
           >
-            <div className={styles.video}>
-              <iframe
-                width="580px"
-                height="360px"
-                src="https://www.youtube.com/embed/VId7FAW5nl4?autoplay=1"
-                frameBorder="0"
-                allow="autoplay; encrypted-media"
-                allowFullScreen
-                style={{ borderRadius: "0px 25px 0px 0px" }}
-              ></iframe>
+              <img
+              src="/static/images/blog.png"
+              alt=""
+              />
             </div>
-          </div>
-        </div>
-      </section>
-
-      <section className={styles.background}>
-        <div className={styles.interno}>
-          <div
-            className={`${styles.box} ${styles.texto}`}
-            style={{ marginLeft: "2rem" }}
-          >
-            
-              <spam style={{ color: "#28B3C7" }}>Marcas que comprovam</spam>{" "}
-              <h3 style={{ fontSize: "36px", marginTop: "10px" }}>
-                os nossos resultados
-              </h3>
-            
-          </div>
         </div>
       </section>
 
@@ -169,7 +143,7 @@ export default function Home() {
             <div className={styles.opcoes}>
               <div className={`${styles.caixa1} `}>
                 <p className="ml-[4rem]">
-                  <spam>Tecnologia</spam>
+                  <h4>Tecnologia</h4>
                   <span>aplicativos, websites e sistemas personalizados</span>
                 </p>
               </div>
@@ -180,7 +154,7 @@ export default function Home() {
             <div className={styles.opcoes}>
               <div className={`${styles.caixa2} `}>
                 <p className="ml-[4rem]">
-                  <spam>Design e Criação</spam>
+                  <h4>Design e Criação</h4>
                   <span>criatividade e arquitetura para négocios digitais</span>
                 </p>
               </div>
@@ -193,8 +167,8 @@ export default function Home() {
             <div className={styles.opcoes}>
               <div className={`${styles.caixa3} `}>
                 <p className="ml-[4rem]">
-                  <spam>Inovação</spam>
-                  <span>consultoria para a sua tranformação digital</span>
+                  <h4>Posicionamento Digital</h4>
+                  <span>comportamento, leitura e expressão no meio digital</span>
                 </p>
               </div>
             </div>
@@ -204,11 +178,9 @@ export default function Home() {
             <div className={styles.opcoes}>
               <div className={`${styles.caixa4} `}>
                 <p className="ml-[4rem]">
-                  <spam>Inteligência Artificial</spam>
+                  <h4>Redação</h4>
                   <span>
-                    Somos especializados em desenvolvimento de plataformas
-                    digitais personalizadas que incorporam tecnologias de
-                    inteligência artificial, incluindo a OpenAI.
+                    escrita e planejamento de conteúdos para todos os usos
                   </span>
                 </p>
               </div>
@@ -216,6 +188,56 @@ export default function Home() {
           </Link>
         </div>
       </section>
+      <section className={styles.background2}>
+        <div className={styles.interno1}>
+          <h2 className={styles.blogtexto}>O QUE<br />ESTAMOS<br />FALANDO?</h2>
+
+        <div className="w-full max-w-[70rem] flex row justify-between items-center">
+        <div className={styles.blog}>
+              <h4><img src="/static/images/al-agencia-data.png" /> 01 / 08 /24</h4>
+              <h2>
+              “5 dicas para fortalecer a amizade no Dia do Amigo – Marketing de Conteúdo”
+              </h2>
+              <span>
+              <p>Leia mais&nbsp;&nbsp;</p>
+              <img className="mt-[5px]" src="/static/images/flecha-rosa.png" />
+              </span>
+          </div>
+
+          <div className={styles.blog}>
+              <h4><img src="/static/images/al-agencia-data.png" /> 01 / 08 /24</h4>
+              <h2>
+              “5 dicas para fortalecer a amizade no Dia do Amigo – Marketing de Conteúdo”
+              </h2>
+              <span>
+              <p>Leia mais&nbsp;&nbsp;</p>
+              <img className="mt-[5px]" src="/static/images/flecha-rosa.png" />
+              </span>
+          </div>
+
+          <div className={styles.blog}>
+              <h4><img src="/static/images/al-agencia-data.png" /> 01 / 08 /24</h4>
+              <h2>
+              “5 dicas para fortalecer a amizade no Dia do Amigo – Marketing de Conteúdo”
+              </h2>
+              <span>
+              <p>Leia mais&nbsp;&nbsp;</p>
+              <img className="mt-[5px]" src="/static/images/flecha-rosa.png" />
+              </span>
+          </div>
+
+          <Link href="/blog">
+          <button className={styles.LerBlog}>
+            <a>
+            Ver mais...
+            </a>
+          </button>
+          </Link>
+        </div>
+
+        </div>
+      </section>
+    
       <Rodape />
       <Whats />
       <RodapeAl />

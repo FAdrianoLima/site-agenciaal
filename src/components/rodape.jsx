@@ -30,10 +30,7 @@ const themeOptions = {
 const theme = createTheme(themeOptions);
 
 function Rodape() {
-  const [nome, setNome] = React.useState("");
   const [email, setEmail] = React.useState("");
-  const [telefone, setTelefone] = React.useState("");
-  const [mensagem, setMensagem] = React.useState("");
   const [disableButton, setDisableButton] = React.useState(false);
   const [showAlertSuccess, setShowAlertSuccess] = React.useState(false);
   const [showAlertDanger, setShowAlertDanger] = React.useState(false);
@@ -154,8 +151,8 @@ function Rodape() {
                 </li>
               </ul>
                 <img
-              src="/static/images/logo-Horizontal.png"
-              alt="Logo Branca"
+              src="/static/images/logo-Horizontal-branco.png"
+              alt="AL Agência de Marketing"
               className={styles.logo}
               />
             </div>
