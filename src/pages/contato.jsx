@@ -23,7 +23,7 @@ const Alert = React.forwardRef(function Alert(props, ref) {
 const theme = createTheme({
   palette: {
     primary: {
-      main: "#322783",
+      main: "#000000",
     },
     secondary: {
       main: "#28B3C7",
@@ -98,44 +98,47 @@ export default function Contato() {
       });
   };
 
+  async function SendContato(dados) {
+    const response = await fetch("/api/contato", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(dados),
+    });
+
+    return response;
+  }
+
   return (
     <ThemeProvider theme={theme}>
       <CssBaseline />
       <Menu />
       <section className={styles.background3} style={{ paddingBottom: "0px" }}>
-       
-          <div className={styles.interno3}>
-          </div>
-        
+        <div className={styles.interno3}></div>
       </section>
 
-      <section style={{marginTop:"8rem"}} className={styles.background}>
+      <section className={`${styles.background} mt-[6rem]`}>
         <div className={styles.interno2}>
           <div className={styles.box2}>
-            <img
-            src="/static/images/telefone.png"
-            />
+            <img src="/static/images/telefone.png" />
             <h3>Quer falar por telefone?</h3>
-            <p>+55 54 9.9263 0060</p>
+            <p>+55 54 9.8116 8850</p>
           </div>
           <div className={styles.box2}>
-          <img
-            src="/static/images/email.png"
-            />
+            <img src="/static/images/email.png" />
             <h3>Nosso E-mail</h3>
-            <p>contato@newfly.digital</p>
+            <p>contato@agenciaal.com.br</p>
           </div>
           <div className={styles.box2}>
-          <img
-            src="/static/images/mapa.png"
-            />
+            <img src="/static/images/mapa.png" />
             <h3>Te esperamos com café.</h3>
-            <p>Waldemar Lazzarotto, 610 B. Interlagos <br />
-CEP 98052-590 | Caxias do Sul</p>
+            <p>
+              Rua Angelo Agostini, B. Pioneiro <br />
+              CEP 95042-090 | Caxias do Sul
+            </p>
           </div>
-          </div>
+        </div>
       </section>
-      <section style={{ paddingTop: "8rem" }} className={styles.background}>
+      <section className={`${styles.background} my-[6rem]`}>
         <div className={styles.interno}>
           <div
             className={styles.box_row}
@@ -145,7 +148,14 @@ CEP 98052-590 | Caxias do Sul</p>
               <h2 className={styles.titulo}>
                 Nossa equipe está pronta para ajudar você.
               </h2>
-              <p>Combinamos estratégia, design, comunicação e tecnologia em marketing para oferecer aos nossos clientes uma vantagem competitiva pela transformação digital da sua empresa, assim focando no resultado perante o mercado. Com vídeos, apps, sites, materiais impressos pensados em ações online eficientes levamos ao mercado sua marca de forma diferenciada.</p>
+              <p>
+                Combinamos estratégia, design, comunicação e tecnologia em
+                marketing para oferecer aos nossos clientes uma vantagem
+                competitiva pela transformação digital da sua empresa, assim
+                focando no resultado perante o mercado. Com vídeos, apps, sites,
+                materiais impressos pensados em ações online e offline
+                eficientes levamos ao mercado sua marca de forma diferenciada.
+              </p>
             </div>
 
             <div className={` ${styles.mobile}`}>
@@ -264,7 +274,7 @@ CEP 98052-590 | Caxias do Sul</p>
                       type="submit"
                       fullWidth
                       variant="contained"
-                      className="bg-[#28B3C7] hover:bg-[#25c262] text-white mx-[.5rem] p-4 mt-2 font-bold border-0  cursor-pointer"
+                      className="bg-[#28B3C7] hover:bg-[#1b7c8a] text-white mx-[.5rem] p-4 mt-2 font-bold border-0  cursor-pointer"
                       sx={{ marginLeft: 0, marginRight: 0 }}
                       disabled={disableButton}
                     >
@@ -277,9 +287,12 @@ CEP 98052-590 | Caxias do Sul</p>
           </div>
         </div>
       </section>
+      {/*
+      MAPA
       <section className={styles.background} style={{ paddingTop: "8rem" }}>
         <GoogleMap />
       </section>
+      */}
       <Rodape />
       <Snackbar
         open={showAlertSuccess}

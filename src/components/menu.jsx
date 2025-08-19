@@ -26,17 +26,19 @@ function Menu() {
     });
   }, []);
 
-
   function toggleMenu() {
     const nav = document.getElementById(`${styles.nav}`);
     nav.classList.toggle(styles.active);
   }
 
-  
   return (
     <div id={styles.menuheader} className={styles.header}>
       <div className={`${styles.interno}`}>
-        <img src="/static/images/Logo-Horizontal-branco.png" alt="Logo horizontal" className={styles.logo} />
+        <img
+          src="/static/images/Logo-Horizontal-branco.png"
+          alt="Logo horizontal"
+          className={styles.logo}
+        />
 
         <button id={`${styles.btn_mobile}`}>
           <span id={`${styles.hamburguer}`}></span>
@@ -47,64 +49,70 @@ function Menu() {
           className={`${styles.menu} ${styles.navbar} ${styles.a2} `}
         >
           <li>
-            <Link legacyBehavior  href="/">
+            <Link legacyBehavior href="/">
               <a> Home</a>
             </Link>
           </li>
           <li>
-            <Link legacyBehavior  href="/agencia">
-              <a  >Nossa Agência</a>
+            <Link legacyBehavior href="/agencia">
+              <a>Nossa Agência</a>
             </Link>
           </li>
 
           <li>
-            <Link legacyBehavior  href="/#servicos">
-              <a  >Serviços</a>
+            <Link legacyBehavior href="/#servicos">
+              <a>Serviços</a>
             </Link>
           </li>
 
-
-          <li >
-            <Link legacyBehavior  href="/cases">
+         {/*
+          <li>
+            <Link legacyBehavior href="/cases">
               <a>Cases</a>
             </Link>
           </li>
 
-
-
           <li>
-            <Link legacyBehavior  href="/blog">
-              <a  >Blog</a>
+            <Link legacyBehavior href="/blog">
+              <a>Blog</a>
             </Link>
           </li>
+         */}
           <li>
-            <Link legacyBehavior  href="/contato">
-              <a  >Contato</a>
+            <Link legacyBehavior href="/contato">
+              <a>Contato</a>
             </Link>
           </li>
-          
-          
         </ul>
-      
-     <ul className={`${styles.social_media}`}>
+
+        <ul className={`${styles.social_media}`}>
           <li>
-            <Link legacyBehavior  href="https://www.facebook.com/newfly.digital">
+            <Link
+              legacyBehavior
+              href="https://www.facebook.com/profile.php?id=61557543758757"
+            >
               <a target="_blank">
-                <img src="/facebook.png"></img>
+                <img src="/facebook-branco.png"></img>
               </a>
             </Link>
           </li>
           <li>
-            <Link legacyBehavior  href="https://www.instagram.com/al_agencia_de_marketing/">
+            <Link
+              legacyBehavior
+              href="https://www.instagram.com/al_agencia_de_marketing/"
+            >
               <a target="_blank">
-                <img src="/Instagram.png"></img>
+                <img src="/Instagram-branco.png"></img>
               </a>
             </Link>
           </li>
           <li>
-            <Link legacyBehavior  href="https://www.linkedin.com/company/al-agência-de-marketing/">
+            <Link
+              legacyBehavior
+              href="https://www.linkedin.com/company/al-ag%C3%AAncia-de-marketing/"
+            >
               <a target="_blank">
-                <img src="/LinkedIn.png"></img>
+                <img src="/LinkedIn-branco.png"></img>
               </a>
             </Link>
           </li>

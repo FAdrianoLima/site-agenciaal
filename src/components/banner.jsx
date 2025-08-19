@@ -11,6 +11,12 @@ function Banner() {
           <img
           src="/static/images/risco.png"
           />
+          
+          <Link legacyBehavior href="/">
+          <a className={styles.botao} target="_blank">
+            Fale conosco e tenha uma consultoria sem compromisso!
+          </a>
+          </Link>
         </div>
           </div>
     </section>

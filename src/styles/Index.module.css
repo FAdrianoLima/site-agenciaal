@@ -1,3 +1,50 @@
+.bgcarroussel {
+  background-color: #0d0d0d;
+  width: 100%;
+  padding: 1.5rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.carrossel {
+  width: 100%;
+  overflow: hidden;
+}
+
+.track {
+  display: flex;
+  width: max-content;
+  animation: scroll 60s linear infinite;
+}
+
+.track img {
+  max-width: 8rem;
+  margin: 0 2rem;
+  height: auto;
+  flex-shrink: 0;
+  filter: grayscale(100%);
+  transition: filter 0.3s ease;
+}
+
+.track img:hover {
+  filter: grayscale(0);
+}
+
+/* Animação infinita */
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+
+
+
 .background {
   background-color: #000000;
   width: 100%;
@@ -7,6 +54,17 @@
   justify-content: center;
   align-items: center;
   color: #ffffff;
+}
+
+.background2 {
+  background-color: #e3e3e3;
+  width: 100%;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #000000;
 }
 
 .background3 {
@@ -21,28 +79,6 @@
   color: #fff;
 }
 
-.background2 {
-  background-color: #e3e3e3;
-  width: 100%;
-  padding-top: 3rem;
-  padding-bottom: 3rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: #000000;
-}
-
-.bgcarroussel {
-  background-color: #e3e3e3;
-  width: 100%;
-  padding-top: 1.5rem;
-  padding-bottom: 1.5rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: #000000;
-}
-
 .interno {
   display: flex;
   flex-direction: row;
@@ -52,14 +88,6 @@
   max-width: 80rem;
 }
 
-.interno3 {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
-}
-
 .interno1 {
   display: flex;
   flex-direction: row;
@@ -67,6 +95,15 @@
   align-items: flex-start;
   width: 100%;
   max-width: 90rem;
+  padding: 1rem 0rem;
+}
+
+.interno3 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
 }
 
 .box {
@@ -107,42 +144,6 @@
   line-height: 30px;
 }
 
-.carrossel {
-  display: flex;
-  scroll-snap-type: x mandatory; /* Define o scroll snap para mover uma imagem por vez */
-  scroll-behavior: smooth; /* Adiciona um efeito de rolagem suave */
-  width: 100%;
-  padding: 0px 0px;
-  flex-direction: row;
-}
-
-.carrossel img {
-  flex: 0 0 auto;
-  width: 100%; /* Ajuste o tamanho das imagens conforme necessário */
-  max-width: 10rem;
-  height: auto;
-  margin: 0px 10px;
-  scroll-snap-align: start; /* Alinha as imagens ao início da viewport */
-}
-
-/* Animação do carrossel */
-@keyframes slide {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(-100%);
-  }
-}
-
-.carrossel img {
-  animation: slide 5s linear infinite; /* Define a animação de slide */
-}
-
-.carrossel:hover img {
-  animation-play-state: paused; /* Pausa a animação quando o mouse estiver sobre o carrossel */
-}
-
 .bloco {
   color: #ffffff;
   font-size: 30px;
@@ -162,6 +163,52 @@
   transition: all 0.5s;
 }
 
+.titulo {
+  padding: 7rem 0rem 3rem 0rem;
+  width: 100%;
+  color: #000000;
+  text-align: center;
+  font-size: 54px;
+}
+
+.titulo span {
+  color: #000000;
+  position: relative;
+  text-decoration: none; 
+  transition: color 0.5s ease; /* suaviza a troca de cor */
+}
+
+.titulo span::after {
+  content: '';
+  position: absolute;
+  bottom: -2px; 
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #28B3C7;
+  transition: width 0.5s ease;
+}
+
+.titulo:hover span {
+  color: #28B3C7; /* troca a cor do texto do span */
+}
+
+.titulo:hover span::after {
+  width: 100%; /* anima a linha */
+}
+
+.titulo a {
+  font-size: 72px;
+  color: #28B3C7;
+  display: inline-block;
+  transition: transform 0.6s ease; /* prepara pra girar */
+}
+
+.titulo:hover a {
+  transform: rotate(360deg); /* gira ao passar o mouse no título */
+}
+
+/*Serviços*/
 .opcoes {
   width: 100%;
   height: 100%;
@@ -175,7 +222,8 @@
 
   position: relative;
   overflow: hidden;
-  border: 1px solid #dedede;
+  /*  border: 1px solid #dedede;*/
+  border: 1px solid #000000;
 }
 
 .caixa1{
@@ -254,7 +302,7 @@
 }
 
 .opcoes h4 {
-  color: #dedede;
+  color: #000000;
   font-size: 96px;
   line-height: 80px;
   font-weight: 600;
@@ -271,7 +319,7 @@
 }
 
 .opcoes:hover h4 {
-  font-size: 48px;
+  font-size: 72px;
   font-weight: 600;
   color: #28B3C7;
   transition: color 0.1s;
@@ -314,8 +362,10 @@
   background-image: url('/static/images/design.png');
   background-size: cover;
 }
+/*Serviços*/
 
 
+/*Blog*/
 .blogtexto {
   font-size: 3.2rem;
 }
@@ -323,16 +373,17 @@
 .blog {
   width: 100%;
   max-width: 16rem;
-  background-color: #000000;
-  box-shadow: 5px 5px 0px #28B3C7;
+  background-color: transparent;
   border-radius: 0.2rem;
-  color: #ffffff;
+  color: #000000;
   padding: 1rem;
+  border: 2px solid #000000;
+  box-shadow: 5px 5px 0px #28B3C7;
 }
 
 .blog h4 {
   font-size: 12px;
-  color: #e3e3e3;
+  color: #000000;
   font-weight: 400;
   display: flex;
   align-items: center;
@@ -359,10 +410,10 @@
 
 .blog p {
   font-size: 0.9rem;
-  color: #e3e3e3;
+  color: #000000;
   font-weight: 400;
   position: relative;
-  padding-bottom: 2px; /* Adiciona um pequeno espaçamento para a borda */
+  padding-bottom: 2px; 
 }
 
 .blog p::after {
@@ -396,13 +447,13 @@
   color: #000000;
   position: relative;
   font-size: 2rem;
-  text-decoration: none; /* Remove o sublinhado padrão */
+  text-decoration: none; 
 }
 
 .LerBlog a::after {
   content: '';
   position: absolute;
-  bottom: -2px; /* Ajuste conforme necessário */
+  bottom: -2px; 
   left: 0;
   width: 0;
   height: 1px;
@@ -412,8 +463,9 @@
 
 .LerBlog a:hover::after {
   width: 100%;
-  background-color: #000000; /* Altere a cor conforme necessário */
+  background-color: #000000; 
 }
+/*Blog*/
 
 @media only screen and (min-width: 216px) and (max-width: 926px) {
   .background {

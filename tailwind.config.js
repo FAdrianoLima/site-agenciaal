@@ -6,13 +6,13 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        primary: "#322783",
-        secondary: "#29D66C",
+        primary: "#000000",
+        secondary: "#28B3C7",
       },
       zIndex: { 9999: "9999" },
     },
     fontFamily: {
-      body: ['Montserrat'],
+      body: ['Roboto'],
     },
   },
   plugins: [],

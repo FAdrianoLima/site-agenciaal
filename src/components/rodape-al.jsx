@@ -6,8 +6,8 @@ export default function RodapeNewFly() {
     <div className={styles.root}>
       <div className={styles.content}>
         <span style={{ display: "flex", flexDirection: "row" }}>
-        Copyright 2024       
-          &nbsp;|&nbsp;&nbsp;Website Designed by &nbsp;
+        Copyright 2025       
+          &nbsp;|&nbsp;&nbsp;Site Produzido por &nbsp;
         </span>
         <Link legacyBehavior  href="https://www.instagram.com/al_agencia_de_marketing">
           <a target="_blank">
