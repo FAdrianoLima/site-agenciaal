@@ -98,22 +98,19 @@ export default function Contato() {
       });
   };
 
-  
-async function SendContato({ nome, email, setor, mensagem }) {
-  const response = await fetch("/api/contato", {
-    method: "POST",
-    headers: {
-      "Content-Type": "application/json",
-    },
-    body: JSON.stringify({ nome, email, setor, mensagem }),
-  });
-  return {
-    status: response.status,
-    data: await response.json(),
-  };
-}
-
-
+  async function SendContato({ nome, email, setor, mensagem }) {
+    const response = await fetch("/api/contato", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({ nome, email, setor, mensagem }),
+    });
+    return {
+      status: response.status,
+      data: await response.json(),
+    };
+  }
 
   return (
     <ThemeProvider theme={theme}>

@@ -66,7 +66,7 @@ export default function Home() {
             style={{ marginLeft: "2rem" }}
           >
             <h3>
-              Somos uma <spam style={{ color: "#28B3C7" }}>agência 360º</spam>{" "}
+              Somos uma <spam style={{ color: "#28B3C7" }}>agência 360º</spam>
               com experiência para fazer o seu negócio ter o{" "}
             </h3>
             <div className={styles.bloco}>Sucesso que você quer!</div>
