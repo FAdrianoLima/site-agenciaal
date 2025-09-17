@@ -1,4 +1,3 @@
-// pages/api/contato.js
 import nodemailer from "nodemailer";
 
 export default async function handler(req, res) {
@@ -13,19 +12,17 @@ export default async function handler(req, res) {
   }
 
   try {
-    // Configuração do transporte (exemplo usando Gmail - pode trocar por SMTP próprio)
     let transporter = nodemailer.createTransport({
       service: "gmail",
       auth: {
-        user: process.env.EMAIL_USER, // configure no .env.local
-        pass: process.env.EMAIL_PASS, // configure no .env.local
+        user: process.env.EMAIL_USER,
+        pass: process.env.EMAIL_PASS,
       },
     });
 
-    // Montando o e-mail
     await transporter.sendMail({
       from: `"Site Agencia AL" <${process.env.EMAIL_USER}>`,
-      to: "fabioa.slima1@gmail.com", // seu email que vai receber
+      to: "fabioa.slima1@gmail.com",
       subject: `Novo contato via site - ${setor}`,
       html: `
         <p><b>Nome:</b> ${nome}</p>
