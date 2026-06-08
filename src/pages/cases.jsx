@@ -10,133 +10,100 @@ export default function anewfly() {
   return (
     <>
       <Menu />
-      <section className={styles.backgroundimg}>
+      <section className={styles.hero}>
         <div className={styles.interno}>
-          <div className={styles.box}></div>
+          <span>PORTFÓLIO</span>
 
-          <div className={styles.box2}>
-          </div>
-        </div>
-      </section>
+          <h1>
+            Projetos que
+            <br />
+            geraram resultado.
+          </h1>
 
-      <section style={{ marginTop: "200px" }} className={styles.background}>
-        <div className={styles.interno}>
-          <p style={{ fontSize: "36 px" }}>
-            <h3
-              style={{ fontWeight: "600", fontSize: "64px" }}
-              className={styles.titulo}
-            >
-              Cases
-            </h3>
+          <p>
+            Websites, branding, campanhas e estratégias desenvolvidas para
+            empresas que decidiram crescer de forma profissional.
           </p>
         </div>
       </section>
-{/* TENTATIVA ;-;
 
-      <section className={styles.background} style={{ marginBottom: "10rem" }}>
-        <div className={styles.interno} style={{ maxWidth: "100rem" }}>
-          <div className={`${styles.images} `}>
-            <Link legacyBehavior  href="/allora">
-              <a className={styles.img}>
-                <div className={styles.bg}>
-                  <p>asdasdsa</p>
-                  <img src="static/images/cases/Allora.png" alt="" />
-                  <div className={styles.verdin}>
-                    &nbsp; <br />
-                  </div>
+      <section className={styles.cases}>
+        <div className={styles.internoColumn}>
+          <div className={styles.gridCases}>
+            <Link legacyBehavior href="/allora">
+              <a className={styles.caseCard}>
+                <img src="/static/images/cases/Allora.png" />
+                <div className={styles.overlay}>
+                  <span>Website • Branding</span>
+                  <h3>Allora Jóias</h3>
                 </div>
               </a>
             </Link>
 
-            <Link legacyBehavior  href="/hanisch">
-              <a className={styles.img}>
-                <div className={styles.bg}>
-                  <p>asdasdsa</p>
-                  <img src="static/images/cases/Hanisch.png" alt="" />
-                  <div className={styles.verdin}>
-                    &nbsp; <br />
-                  </div>
+            <Link legacyBehavior href="/hanisch">
+              <a className={styles.caseCard}>
+                <img src="/static/images/cases/Hanisch.png" />
+                <div className={styles.overlay}>
+                  <span>Website</span>
+                  <h3>Hanisch Medical</h3>
                 </div>
               </a>
             </Link>
-            <Link legacyBehavior  href="/rpp">
-              <a className={styles.img}>
-                <div className={styles.bg}>
-                  <p>asdasdsa</p>
-                  <img src="static/images/cases/RPP.png" alt="" />
-                  <div className={styles.verdin}>
-                    &nbsp; <br />
-                  </div>
+
+            <Link legacyBehavior href="/mercatto">
+              <a className={styles.caseCard}>
+                <img src="/static/images/cases/Mercatto.png" />
+                <div className={styles.overlay}>
+                  <span>Marketing</span>
+                  <h3>Mercatto</h3>
                 </div>
               </a>
             </Link>
-            <Link legacyBehavior  href="/mercatto">
-              <a className={styles.img}>
-                <div className={styles.bg}>
-                  <p>asdasdsa</p>
-                  <img src="static/images/cases/Mercatto.png" alt="" />
-                  <div className={styles.verdin}>
-                    &nbsp; <br />
-                  </div>
+
+            <Link legacyBehavior href="/rpp">
+              <a className={styles.caseCard}>
+                <img src="/static/images/cases/RPP.png" />
+                <div className={styles.overlay}>
+                  <span>Institucional</span>
+                  <h3>RPP Construtora</h3>
                 </div>
               </a>
             </Link>
           </div>
         </div>
       </section>
-*/}
 
-      <section className="w-full flex justify-center items-center mt-[1rem]">
-        <div className={styles.blococonteudo}>
-        <Link legacyBehavior  href="/allora">
-          <div className={styles.box}>
-          <p>Allora Jóias</p>
-            <div className={styles.boxcontent}
-            style={{backgroundImage:"url(/static/images/cases/Allora.png)"}}
-            ></div>
+      <section className={styles.numeros}>
+        <div className={styles.interno}>
+          <div className={styles.numero}>
+            <h2>+100</h2>
+            <span>Projetos realizados</span>
           </div>
-          </Link>
-          <Link legacyBehavior  href="/hanisch">
-          <div className={styles.box}>
-          <p>Hanisch Medical</p>
-            <div className={styles.boxcontent}
-            style={{backgroundImage:"url(/static/images/cases/Hanisch.png)"}}
-            ></div>
+
+          <div className={styles.numero}>
+            <h2>+20</h2>
+            <span>Segmentos atendidos</span>
           </div>
-          </Link>
-          <Link legacyBehavior  href="/mercatto">
-          <div className={styles.box}>
-          <p>Mercatto</p>
-            <div className={styles.boxcontent}
-            style={{backgroundImage:"url(/static/images/cases/Mercatto.png)"}}
-            ></div>
+
+          <div className={styles.numero}>
+            <h2>+6</h2>
+            <span>Anos de experiência</span>
           </div>
-          </Link>
-          <Link legacyBehavior  href="/rpp">
-          <div className={styles.box}>
-          <p>RPP Construtora</p>
-            <div className={styles.boxcontent}
-            style={{backgroundImage:"url(/static/images/cases/RPP.png)"}}
-            ></div>
-          </div>
-          </Link>
-          <Link legacyBehavior  href="/mercatto">
-          <div className={styles.box}>
-          <p>Mercatto</p>
-            <div className={styles.boxcontent}
-            style={{backgroundImage:"url(/static/images/cases/Mercatto.png)"}}
-            ></div>
-          </div>
-          </Link>
-          <Link legacyBehavior  href="/mercatto">
-          <div className={styles.box}>
-          <p>Mercato</p>
-            <div className={styles.boxcontent}
-            style={{backgroundImage:"url(/static/images/cases/Mercatto.png)"}}
-            ></div>
-          </div>
-          </Link>
         </div>
+      </section>
+
+      <section className={styles.cta}>
+        <h2>
+          O próximo case
+          <br />
+          pode ser o seu.
+        </h2>
+
+        <Link legacyBehavior href="https://wa.me/5554981168850">
+          <a target="_blank" rel="noopener noreferrer">
+            Solicitar Diagnóstico
+          </a>
+        </Link>
       </section>
 
       <Rodape />

@@ -1,100 +1,113 @@
 .background {
-    background-image: url(/static/images/wallpaper-al-agencia.png);
-    background-position: center;
-    background-size: cover;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 58vh;
-    width: 100%;
+  background-image: url(/static/images/wallpaper-al-agencia.png);
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 58vh;
+  width: 100%;
 }
 
 .interno {
-    width: 100%;
-    max-width: 100rem;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
+  width: 100%;
+  max-width: 100rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
 
 .box {
-    width: 100%;
-    max-width: 80rem;
-    display: flex;
-    position: relative;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    color: #fff;
-    text-align: center;
-  }
+  width: 100%;
+  max-width: 80rem;
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  text-align: center;
+}
 
-  .box h4 {
-    margin-top: 10px;
-    font-size: 24px;
-    font-weight: 500;
-  }
+.box h4 {
+  margin-top: 10px;
+  font-size: 24px;
+  font-weight: 500;
+}
 
-   .box h2 {
-    font-size: 128px;
-    font-weight: 600;
-    z-index: 12345;
-  }
+.box h2 {
+  font-size: 128px;
+  font-weight: 600;
+  z-index: 12345;
+}
 
-  .box img {
-    margin: -9rem 0px 0px 0px;
-    width: 100%;
-    max-width: 70rem;
-    position: absolute;
-    z-index: 123;
-  }
+.box img {
+  margin: -9rem 0px 0px 0px;
+  width: 100%;
+  max-width: 70rem;
+  position: absolute;
+  z-index: 123;
+}
 
 .botao {
   z-index: 123456;
   width: 100%;
   max-width: 35rem;
   margin-top: 5rem;
-  background: #bff747;      
+  background: #bff747;
   color: #000000;
   border-radius: 10rem;
-  border: 3px solid #000000;     
+  border: 3px solid #000000;
   padding: 0.8rem 1.5rem;
   font-weight: 600;
   font-size: 20px;
   cursor: pointer;
   position: relative;
   transition: transform 0.1s ease;
-  box-shadow: 0 6px 0 #ffffff;   
+  box-shadow:
+    0 8px 0 #ffffff,
+    0 15px 30px rgba(0, 0, 0, 0.15);
+
+  transition:
+    transform 0.35s cubic-bezier(0.22, 1, 0.36, 1),
+    box-shadow 0.35s cubic-bezier(0.22, 1, 0.36, 1),
+    background 0.3s ease;
 }
 
 .botao:hover {
-  transform: translateY(-5px);  
-  box-shadow: 0 6px 0 #000000;  
+  transform: translateY(-5px);
+  box-shadow: 0 6px 0 #000000;
 }
 
-    @media only screen and (min-width: 216px) and (max-width: 926px) {
-      .background {
-        height: 60%;
-      }
-    
-      .interno {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        width: 100%;
-        max-width: 25rem;
-      }
+.botao:active {
+  transform: translateY(-2px);
 
-      .box {
-        margin-left: 0rem;
-        margin-top: 2rem;
-        width: 100%;
-        max-width: 20rem;
-        display: flex;
-        flex-direction: column;
-        z-index: 1234;
-      }
-      
-    }
-    
+  box-shadow:
+    0 4px 0 #ffffff,
+    0 8px 15px rgba(0, 0, 0, 0.15);
+}
+
+@media only screen and (min-width: 216px) and (max-width: 926px) {
+  .background {
+    height: 60%;
+  }
+
+  .interno {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    max-width: 25rem;
+  }
+
+  .box {
+    margin-left: 0rem;
+    margin-top: 2rem;
+    width: 100%;
+    max-width: 20rem;
+    display: flex;
+    flex-direction: column;
+    z-index: 1234;
+  }
+}

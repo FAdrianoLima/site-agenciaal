@@ -3,7 +3,18 @@
 
 :root {
   --color-primary: #ffffff;
-  --color-secondary: #28B3C7;
+  --color-secondary: #28b3c7;
+
+  --black: #050505;
+  --dark: #0b0b0b;
+
+  --pink: #d82087;
+  --pink-light: #ff4da6;
+
+  --white: #ffffff;
+  --gray: #9a9a9a;
+
+  --accent: #d82087;
 }
 
 html,
@@ -11,13 +22,13 @@ body {
   padding: 0;
   margin: 0;
   font-family: Roboto;
-    background-color: #ffffff;
-    font-size: 15px;
-    font-weight: 400;
-    color: #000;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    overflow-x: hidden;
+  background-color: #ffffff;
+  font-size: 15px;
+  font-weight: 400;
+  color: #000;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
 }
 
 a {
@@ -89,7 +100,6 @@ h4 {
   font-size: 24px;
 }
 
-
 .rec.rec-carousel-wrapper:focus,
 .rec.rec-carousel-wrapper .rec-carousel:focus,
 .rec.rec-carousel-wrapper .rec-slider-container:focus,
@@ -106,7 +116,7 @@ h4 {
 /* Arrow Styles */
 
 .rec.rec-carousel-wrapper .rec-carousel button {
-  background: #28B3C7;
+  background: #28b3c7;
   color: #fff;
 }
 
@@ -116,7 +126,7 @@ h4 {
 }
 
 .rec.rec-carousel-wrapper .rec-pagination .rec.rec-dot.rec.rec-dot_active {
-  background: #28B3C7;
+  background: #28b3c7;
 }
 
 .MuiOutlinedInput-root {

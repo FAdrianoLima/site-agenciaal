@@ -55,171 +55,183 @@ export default function Home() {
         </div>
       </section>
 
-      <section
-        id="quemSomos"
-        style={{ paddingBottom: "100px", paddingTop: "100px" }}
-        className={styles.background}
-      >
+      <section className={styles.backgroundAbout}>
         <div className={styles.interno}>
-          <div
-            className={`${styles.box} ${styles.texto}`}
-            style={{ marginLeft: "2rem" }}
-          >
-            <h3>
-              Somos uma <spam style={{ color: "#28B3C7" }}>agência 360º</spam>
-              com experiência para fazer o seu negócio ter o{" "}
-            </h3>
-            <div className={styles.bloco}>Sucesso que você quer!</div>
+          <div className={styles.aboutTitle}>
+            <span>QUEM SOMOS</span>
+          </div>
+
+          <div className={styles.aboutContent}>
+            <h2>
+              Marketing, tecnologia e comunicação unidos para gerar resultados
+              reais.
+            </h2>
+
             <p>
-              Transformar o seu negócio em um projeto lucrativo é um desafio que
-              a atual geração digital busca incansavelmente. Saber administrar
-              influência digital com transparência e autoridade é o nosso
-              principal objetivo!
+              Atuamos desde o posicionamento da marca até o desenvolvimento de
+              websites, campanhas, conteúdo e materiais de comunicação.
             </p>
           </div>
-
-          <div
-            className={`${styles.box}`}
-            style={{ maxWidth: "40rem", marginTop: "2rem" }}
-          >
-            <img src="/static/images/blog.png" alt="" />
-          </div>
         </div>
       </section>
 
-      <section
-        id="servicos"
-         className={styles.background3}>
-        <div className={styles.interno3}>
-          <h2 className={styles.titulo}>
-            Trazemos soluções para quaisquer<br/>estratégias <span>offline</span> ou{" "}
-            <span>online</span><a>*</a>
-          </h2>
-        </div>
-        <div className={styles.interno3}>
-          <Link legacyBehavior href="/tecnologia">
-            <div className={styles.opcoes}>
-              <div className={`${styles.caixa1} `}>
-                <spam className="ml-[4rem]">
-                  <h4>Tecnologia</h4>
-                  <span>aplicativos, websites e sistemas personalizados</span>
-                </spam>
-              </div>
-            </div>
-          </Link>
+      <section className={styles.backgroundDark}>
+        <div className={styles.interno}>
+          <h2>Nossos diferenciais</h2>
 
-          <Link legacyBehavior href="/design">
-            <div className={styles.opcoes}>
-              <div className={`${styles.caixa2} `}>
-                <spam className="ml-[4rem]">
-                  <h4>Design e Criação</h4>
-                  <span>criatividade e arquitetura para négocios digitais</span>
-                </spam>
-              </div>
-            </div>
-          </Link>
-        </div>
-
-        <div className={styles.interno3}>
-          <Link legacyBehavior href="/inovacao">
-            <div className={styles.opcoes}>
-              <div className={`${styles.caixa3} `}>
-                <spam className="ml-[4rem]">
-                  <h4>Posicionamento Digital</h4>
-                  <span>
-                    comportamento, leitura e expressão no meio digital
-                  </span>
-                </spam>
-              </div>
-            </div>
-          </Link>
-
-          <Link legacyBehavior href="/ia">
-            <div className={styles.opcoes}>
-              <div className={`${styles.caixa4} `}>
-                <spam className="ml-[4rem]">
-                  <h4>Redação</h4>
-                  <span>
-                    escrita e planejamento de conteúdos para todos os usos
-                  </span>
-                </spam>
-              </div>
-            </div>
-          </Link>
-        </div>
-      </section>
-      <section className={styles.background2}>
-        <div className={styles.interno1}>
-          <h2 className={styles.blogtexto}>
-            O que
-            <br />
-            estamos
-            <br />
-            falando?
-          </h2>
-
-          <div className="w-full max-w-[70rem] flex row justify-between items-center">
-            <div className={styles.blog}>
-              <h4>
-                <img src="/static/images/al-agencia-data.png" /> 01 / 08 /24
-              </h4>
-              <h2>
-                “5 dicas para fortalecer a amizade no Dia do Amigo – Marketing
-                de Conteúdo”
-              </h2>
-              <span>
-                <p>Leia mais&nbsp;&nbsp;</p>
-                <img
-                  className="mt-[5px]"
-                  src="/static/images/flecha-rosa.png"
-                />
-              </span>
+          <div className={styles.gridDif}>
+            <div className={styles.cardDif}>
+              <span>01</span>
+              <h3>Atendimento Consultivo</h3>
             </div>
 
-            <div className={styles.blog}>
-              <h4>
-                <img src="/static/images/al-agencia-data.png" /> 01 / 08 /24
-              </h4>
-              <h2>
-                “5 dicas para fortalecer a amizade no Dia do Amigo – Marketing
-                de Conteúdo”
-              </h2>
-              <span>
-                <p>Leia mais&nbsp;&nbsp;</p>
-                <img
-                  className="mt-[5px]"
-                  src="/static/images/flecha-rosa.png"
-                />
-              </span>
+            <div className={styles.cardDif}>
+              <span>02</span>
+              <h3>Estratégias Personalizadas</h3>
             </div>
 
-            <div className={styles.blog}>
-              <h4>
-                <img src="/static/images/al-agencia-data.png" /> 01 / 08 /24
-              </h4>
-              <h2>
-                “5 dicas para fortalecer a amizade no Dia do Amigo – Marketing
-                de Conteúdo”
-              </h2>
-              <span>
-                <p>Leia mais&nbsp;&nbsp;</p>
-                <img
-                  className="mt-[5px]"
-                  src="/static/images/flecha-rosa.png"
-                />
-              </span>
+            <div className={styles.cardDif}>
+              <span>03</span>
+              <h3>Servidor Próprio</h3>
             </div>
 
-            <Link href="/blog">
-              <button className={styles.LerBlog}>Ver mais...</button>
-            </Link>
+            <div className={styles.cardDif}>
+              <span>04</span>
+              <h3>Foco em Resultados</h3>
+            </div>
           </div>
         </div>
+      </section>
+      <section className={styles.backgroundCases}>
+        <div className={styles.interno}>
+          <h2>Projetos em destaque</h2>
+
+          <div className={styles.caseGrid}>
+            <div className={styles.case}>
+              <img src="/static/images/cases/case1.jpg" />
+              <h3>Cliente X</h3>
+              <p>Website + Posicionamento</p>
+            </div>
+
+            <div className={styles.case}>
+              <img src="/static/images/cases/case2.jpg" />
+              <h3>Cliente Y</h3>
+              <p>Campanha Digital</p>
+            </div>
+
+            <div className={styles.case}>
+              <img src="/static/images/cases/case3.jpg" />
+              <h3>Cliente Z</h3>
+              <p>Branding</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section className={styles.backgroundServices}>
+        <div className={styles.interno}>
+          <h2>O que fazemos</h2>
+
+          <div className={styles.serviceList}>
+            <div className={styles.serviceItem}>
+              <span>01</span>
+              <h3>Marketing Estratégico</h3>
+            </div>
+
+            <div className={styles.serviceItem}>
+              <span>02</span>
+              <h3>Desenvolvimento Web</h3>
+            </div>
+
+            <div className={styles.serviceItem}>
+              <span>03</span>
+              <h3>Gestão de Redes Sociais</h3>
+            </div>
+
+            <div className={styles.serviceItem}>
+              <span>04</span>
+              <h3>Foto e Vídeo</h3>
+            </div>
+
+            <div className={styles.serviceItem}>
+              <span>05</span>
+              <h3>Design Gráfico</h3>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section className={styles.backgroundProcess}>
+        <div className={styles.internoTimeline}>
+          <h2>Como trabalhamos</h2>
+
+          <div className={styles.timeline}>
+            <div>01 Diagnóstico</div>
+
+            <div>02 Planejamento</div>
+
+            <div>03 Execução</div>
+
+            <div>04 Acompanhamento</div>
+
+            <div>05 Crescimento</div>
+          </div>
+        </div>
+      </section>
+      <section className={styles.backgroundTech}>
+        <div className={styles.interno}>
+          <h2>Tecnologia aplicada ao marketing</h2>
+
+          <div className={styles.techGrid}>
+            <span>React</span>
+            <span>Next.js</span>
+            <span>Node.js</span>
+            <span>PHP</span>
+            <span>SEO</span>
+            <span>Meta Ads</span>
+            <span>Google Ads</span>
+            <span>Adobe</span>
+          </div>
+        </div>
+      </section>
+      <section className={styles.backgroundNumbers}>
+        <div className={styles.interno}>
+          <div className={styles.numberCard}>
+            <h2>+7</h2>
+            <span>Anos de experiência</span>
+          </div>
+
+          <div className={styles.numberCard}>
+            <h2>+300</h2>
+            <span>Projetos realizados</span>
+          </div>
+
+          <div className={styles.numberCard}>
+            <h2>+30</h2>
+            <span>Segmentos atendidos</span>
+          </div>
+        </div>
+      </section>
+      <section className={styles.backgroundManifesto}>
+        <div className={styles.interno}>
+          <h2>
+            Marketing para <span>aparecer</span>
+            <br />e ser lembrado.
+          </h2>
+
+          <p>
+            Não acreditamos em fórmulas prontas, pacotes engessados ou promessas
+            irreais. Construímos estratégias personalizadas, alinhadas à
+            realidade de cada empresa.
+          </p>
+        </div>
+      </section>
+      <section className={styles.ctaFinal}>
+        <h2>Vamos conversar sobre o crescimento da sua empresa?</h2>
+
+        <a href="https://wa.me/SEUNUMERO">Solicitar Diagnóstico Gratuito</a>
       </section>
 
       <Rodape />
       <Whats />
-      <RodapeAl />
     </>
   );
 }

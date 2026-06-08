@@ -3,7 +3,6 @@ import Menu from "../components/menu";
 import Rodape from "../components/rodape";
 import styles from "../styles/Contato.module.css";
 import Link from "next/link";
-import GoogleMap from "../components/map";
 import Box from "@mui/material/Box";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
 import CssBaseline from "@mui/material/CssBaseline";
@@ -116,8 +115,17 @@ export default function Contato() {
     <ThemeProvider theme={theme}>
       <CssBaseline />
       <Menu />
-      <section className={styles.background3} style={{ paddingBottom: "0px" }}>
-        <div className={styles.interno3}></div>
+      <section className={styles.background3}>
+        <div className={styles.heroContent}>
+          <span>CONTATO</span>
+
+          <h1>Vamos conversar sobre seu projeto.</h1>
+
+          <p>
+            Conte para nós seus objetivos e nossa equipe retornará com a melhor
+            estratégia para sua empresa.
+          </p>
+        </div>
       </section>
 
       <section className={`${styles.background} mt-[6rem]`}>
@@ -153,12 +161,9 @@ export default function Contato() {
                 Nossa equipe está pronta para ajudar você.
               </h2>
               <p>
-                Combinamos estratégia, design, comunicação e tecnologia em
-                marketing para oferecer aos nossos clientes uma vantagem
-                competitiva pela transformação digital da sua empresa, assim
-                focando no resultado perante o mercado. Com vídeos, apps, sites,
-                materiais impressos pensados em ações online e offline
-                eficientes levamos ao mercado sua marca de forma diferenciada.
+                Atuamos unindo estratégia, design, tecnologia e comunicação para
+                ajudar empresas a fortalecer sua presença digital, gerar
+                autoridade e conquistar novos clientes.
               </p>
             </div>
 
@@ -173,130 +178,134 @@ export default function Contato() {
                   possível
                 </p>
 
-                <Box
-                  component="form"
-                  sx={{ width: "100%" }}
-                  noValidate
-                  autoComplete="off"
-                  onSubmit={handleSubmit}
-                >
-                  <div className="w-full flex flex-row sm:flex-nowrap flex-wrap justify-between items-center">
-                    <TextField
-                      value={nome || ""}
-                      type="text"
-                      margin="normal"
-                      required
-                      fullWidth
-                      id="nome"
-                      label="Nome"
-                      name="nome"
-                      autoFocus
-                      onChange={(event) => setNome(event.target.value)}
-                      sx={{ marginLeft: ".5rem", marginRight: ".5rem" }}
-                      onFocus={() => {
-                        const newError = { ...error };
-                        newError.nome = false;
-                        setError(newError);
-                      }}
-                      error={error.nome}
-                      helperText={error.nome ? "campo obrigatório" : ""}
-                    />
+                <div className={styles.formCard}>
+                  <Box
+                    component="form"
+                    sx={{ width: "100%" }}
+                    noValidate
+                    autoComplete="off"
+                    onSubmit={handleSubmit}
+                  >
+                    <div className="w-full flex flex-row sm:flex-nowrap flex-wrap justify-between items-center">
+                      <TextField
+                        value={nome || ""}
+                        type="text"
+                        margin="normal"
+                        required
+                        fullWidth
+                        id="nome"
+                        label="Nome"
+                        name="nome"
+                        autoFocus
+                        onChange={(event) => setNome(event.target.value)}
+                        sx={{ marginLeft: ".5rem", marginRight: ".5rem" }}
+                        onFocus={() => {
+                          const newError = { ...error };
+                          newError.nome = false;
+                          setError(newError);
+                        }}
+                        error={error.nome}
+                        helperText={error.nome ? "campo obrigatório" : ""}
+                      />
 
-                    <TextField
-                      value={email || ""}
-                      type="text"
-                      margin="normal"
-                      required
-                      fullWidth
-                      id="email"
-                      label="E-Mail"
-                      name="email"
-                      onChange={(event) => setEmail(event.target.value)}
-                      sx={{ marginLeft: ".5rem", marginRight: ".5rem" }}
-                      onFocus={() => {
-                        const newError = { ...error };
-                        newError.email = false;
-                        setError(newError);
-                      }}
-                      error={error.email}
-                      helperText={error.email ? "campo obrigatório" : ""}
-                    />
-                  </div>
-                  <div className="w-full flex flex-row sm:flex-nowrap flex-wrap justify-between items-center">
-                    <div
-                      className="select-input w-full"
-                      style={{ marginLeft: ".5rem", marginRight: ".5rem" }}
-                    >
-                      <FormControl fullWidth>
-                        <InputLabel id="select-setor-label">Setor *</InputLabel>
-                        <Select
-                          labelId="select-setor-label"
-                          id="setor"
-                          name="setor"
-                          value={setor || ""}
-                          label="Setor *"
-                          required
-                          error={error.setor}
-                          onChange={(event) => setSetor(event.target.value)}
-                          onFocus={() => {
-                            const newError = { ...error };
-                            newError.setor = false;
-                            setError(newError);
-                          }}
-                        >
-                          <MenuItem key={"comercial"} value={"comercial"}>
-                            Comercial
-                          </MenuItem>
-                          <MenuItem key={"financeiro"} value={"financeiro"}>
-                            Financeiro
-                          </MenuItem>
-                        </Select>
-                        {error.setor && (
-                          <p className="select-error" id="setor-helper-text">
-                            campo obrigatório
-                          </p>
-                        )}
-                      </FormControl>
+                      <TextField
+                        value={email || ""}
+                        type="text"
+                        margin="normal"
+                        required
+                        fullWidth
+                        id="email"
+                        label="E-Mail"
+                        name="email"
+                        onChange={(event) => setEmail(event.target.value)}
+                        sx={{ marginLeft: ".5rem", marginRight: ".5rem" }}
+                        onFocus={() => {
+                          const newError = { ...error };
+                          newError.email = false;
+                          setError(newError);
+                        }}
+                        error={error.email}
+                        helperText={error.email ? "campo obrigatório" : ""}
+                      />
                     </div>
-                  </div>
-                  <div style={{ marginLeft: ".5rem", marginRight: ".5rem" }}>
-                    <TextField
-                      value={mensagem || ""}
-                      type="text"
-                      margin="normal"
-                      fullWidth
-                      id="mensagem"
-                      label="Mensagem"
-                      name="mensagem"
-                      multiline
-                      rows={4}
-                      onChange={(event) => setMensagem(event.target.value)}
-                    />
-                  </div>
-                  <div style={{ marginRight: ".5rem" }}>
-                    <Button
-                      type="submit"
-                      fullWidth
-                      variant="contained"
-                      className="bg-[#28B3C7] hover:bg-[#1b7c8a] text-white mx-[.5rem] p-4 mt-2 font-bold border-0  cursor-pointer"
-                      sx={{ marginLeft: 0, marginRight: 0 }}
-                      disabled={disableButton}
-                    >
-                      ENVIAR AGORA
-                    </Button>
-                  </div>
-                </Box>
+                    <div className="w-full flex flex-row sm:flex-nowrap flex-wrap justify-between items-center">
+                      <div
+                        className="select-input w-full"
+                        style={{ marginLeft: ".5rem", marginRight: ".5rem" }}
+                      >
+                        <FormControl fullWidth>
+                          <InputLabel id="select-setor-label">
+                            Setor *
+                          </InputLabel>
+                          <Select
+                            labelId="select-setor-label"
+                            id="setor"
+                            name="setor"
+                            value={setor || ""}
+                            label="Setor *"
+                            required
+                            error={error.setor}
+                            onChange={(event) => setSetor(event.target.value)}
+                            onFocus={() => {
+                              const newError = { ...error };
+                              newError.setor = false;
+                              setError(newError);
+                            }}
+                          >
+                            <MenuItem key={"comercial"} value={"comercial"}>
+                              Comercial
+                            </MenuItem>
+                            <MenuItem key={"financeiro"} value={"financeiro"}>
+                              Financeiro
+                            </MenuItem>
+                          </Select>
+                          {error.setor && (
+                            <p className="select-error" id="setor-helper-text">
+                              campo obrigatório
+                            </p>
+                          )}
+                        </FormControl>
+                      </div>
+                    </div>
+                    <div style={{ marginLeft: ".5rem", marginRight: ".5rem" }}>
+                      <TextField
+                        value={mensagem || ""}
+                        type="text"
+                        margin="normal"
+                        fullWidth
+                        id="mensagem"
+                        label="Mensagem"
+                        name="mensagem"
+                        multiline
+                        rows={4}
+                        onChange={(event) => setMensagem(event.target.value)}
+                      />
+                    </div>
+                    <div style={{ marginRight: ".5rem" }}>
+                      <Button
+                        type="submit"
+                        fullWidth
+                        variant="contained"
+                        className="bg-[#28B3C7] hover:bg-[#1b7c8a] text-white mx-[.5rem] p-4 mt-2 font-bold border-0  cursor-pointer"
+                        sx={{ marginLeft: 0, marginRight: 0 }}
+                        disabled={disableButton}
+                      >
+                        ENVIAR AGORA
+                      </Button>
+                    </div>
+                  </Box>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </section>
-      {/*
-      MAPA
-      <section className={styles.background} style={{ paddingTop: "8rem" }}>
-        <GoogleMap />
+      <section className={styles.cta}>
+        <h2>Prefere falar diretamente pelo WhatsApp?</h2>
+
+        <a href="https://wa.me/5554981168850">Iniciar conversa</a>
       </section>
-      */}
+
       <Rodape />
       <Snackbar
         open={showAlertSuccess}
