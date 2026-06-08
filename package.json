@@ -38,7 +38,7 @@
     "moment": "^2.30.1",
     "mui-rte": "^2.0.1",
     "mui-tiptap": "^1.8.6",
-    "next": "^15.4.7",
+    "next": "^16.2.7",
     "nodemailer": "^7.0.5",
     "react": "^18.2.0",
     "react-dom": "^18.3.1",
