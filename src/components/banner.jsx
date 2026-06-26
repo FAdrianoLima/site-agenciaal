@@ -6,19 +6,29 @@ function Banner() {
     <section className={styles.background}>
       <div className={styles.interno}>
         <div className={styles.box}>
-          <h2>A sua <spam style={{color:"#d82087"}}>agência</spam></h2>
-          <h4>Somos <spam style={{ color: "#d82087", fontWeight: "300" }}>a agência digital que vai acelerar</spam> sua transformação digital.</h4>
+          <h2>
+            A sua <span style={{ color: "#d82087" }}>agência</span>
+          </h2>
+          <h4>
+            Somos{" "}
+            <span style={{ color: "#d82087", fontWeight: "300" }}>
+              a agência digital que vai acelerar
+            </span>{" "}
+            sua transformação digital.
+          </h4>
+          {/* risco
           <img
           src="/static/images/risco.png"
           />
-          
+          */}
+
           <Link legacyBehavior href="/">
-          <a className={styles.botao} target="_blank">
-            Fale conosco e tenha uma consultoria sem compromisso!
-          </a>
+            <a className={styles.botao} target="_blank">
+              Fale conosco e tenha uma consultoria sem compromisso!
+            </a>
           </Link>
         </div>
-          </div>
+      </div>
     </section>
   );
 }

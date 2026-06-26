@@ -35,22 +35,25 @@ export default function Home() {
         <div className={styles.carrossel}>
           <div className={styles.track} ref={trackRef}>
             <img src="/static/images/parceiros/angelo-wan-mentorr.png" alt="" />
-            <img src="/static/images/parceiros/ckf.png" alt="" />
             <img
-              src="/static/images/parceiros/Inovar-climatizacaoo.png"
+              src="/static/images/parceiros/petland-distribuicao.png"
               alt=""
             />
             <img
               src="/static/images/parceiros/Integrity-buildingg.png"
               alt=""
             />
+            <img src="/static/images/parceiros/DV-Adv.png" alt="" />
+            <img src="/static/images/parceiros/Personal-Sabrina.png" alt="" />
+            <img src="/static/images/parceiros/Marcon.png" alt="" />
             <img src="/static/images/parceiros/longhi-episs.png" alt="" />
+            <img src="/static/images/parceiros/Polipisoo.png" alt="" />
+            <img src="/static/images/parceiros/ckf.png" alt="" />
+            <img src="/static/images/parceiros/maxxi-consultoriaa.png" alt="" />
             <img
-              src="/static/images/parceiros/petland-distribuicao.png"
+              src="/static/images/parceiros/Inovar-climatizacaoo.png"
               alt=""
             />
-            <img src="/static/images/parceiros/Polipisoo.png" alt="" />
-            <img src="/static/images/parceiros/maxxi-consultoriaa.png" alt="" />
           </div>
         </div>
       </section>

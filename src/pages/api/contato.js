@@ -1,40 +1,37 @@
-import nodemailer from "nodemailer";
+import { SendContato } from "../../services/sendingblue";
 
 export default async function handler(req, res) {
   if (req.method !== "POST") {
-    return res.status(405).json({ message: "Método não permitido" });
-  }
-
-  const { nome, email, setor, mensagem } = req.body;
-
-  if (!nome || !email || !setor) {
-    return res.status(400).json({ message: "Campos obrigatórios ausentes" });
+    return res.status(405).json({
+      error: "Method not allowed",
+    });
   }
 
   try {
-    let transporter = nodemailer.createTransport({
-      service: "gmail",
-      auth: {
-        user: process.env.EMAIL_USER,
-        pass: process.env.EMAIL_PASS,
-      },
+    const { nome, telefone, email, objetivo, mensagem } = req.body;
+
+    if (!nome || !telefone || !email || !objetivo) {
+      return res.status(400).json({
+        error: "Campos obrigatórios",
+      });
+    }
+
+    await SendContato({
+      nome,
+      telefone,
+      email,
+      objetivo,
+      mensagem,
     });
 
-    await transporter.sendMail({
-      from: `"Site Agencia AL" <${process.env.EMAIL_USER}>`,
-      to: "fabioa.slima1@gmail.com",
-      subject: `Novo contato via site - ${setor}`,
-      html: `
-        <p><b>Nome:</b> ${nome}</p>
-        <p><b>Email:</b> ${email}</p>
-        <p><b>Setor:</b> ${setor}</p>
-        <p><b>Mensagem:</b><br/>${mensagem}</p>
-      `,
+    return res.status(200).json({
+      success: true,
     });
-
-    return res.status(201).json({ message: "Contato enviado com sucesso" });
   } catch (error) {
-    console.error("Erro ao enviar email:", error);
-    return res.status(500).json({ message: "Erro ao enviar contato" });
+    console.error("Erro Brevo:", error?.response?.data || error);
+
+    return res.status(500).json({
+      error: "Erro ao enviar contato",
+    });
   }
 }

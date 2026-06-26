@@ -34,60 +34,44 @@ export default function Contato() {
   const [nome, setNome] = React.useState("");
   const [email, setEmail] = React.useState("");
   const [setor, setSetor] = React.useState("");
+  const [objetivo, setObjetivo] = React.useState("");
   const [mensagem, setMensagem] = React.useState("");
+  const [telefone, setTelefone] = React.useState("");
   const [showAlertSuccess, setShowAlertSuccess] = React.useState(false);
   const [showAlertDanger, setShowAlertDanger] = React.useState(false);
   const [error, setError] = React.useState({});
   const [disableButton, setDisableButton] = React.useState(false);
 
-  const handleSubmit = (event) => {
+  const handleSubmit = async (event) => {
     event.preventDefault();
-    const data = new FormData(event.currentTarget);
 
-    const nome = data.get("nome");
-    const email = data.get("email");
-    const setor = data.get("setor");
+    let newError = {};
 
-    let isValid = true;
-    const newError = { ...error };
+    if (!nome) newError.nome = true;
+    if (!telefone) newError.telefone = true;
+    if (!email) newError.email = true;
+    if (!objetivo) newError.objetivo = true;
 
-    if (email.trim() === "") {
-      newError.email = true;
-      isValid = false;
+    if (Object.keys(newError).length > 0) {
+      setError(newError);
+      setDisableButton(false);
+      return;
     }
-
-    if (nome.trim() === "") {
-      newError.nome = true;
-      isValid = false;
-    }
-
-    if (setor.trim() === "") {
-      newError.setor = true;
-      isValid = false;
-    }
-
-    setError(newError);
-
-    if (!isValid) return;
-
-    setDisableButton(true);
 
     SendContato({
       nome,
+      telefone,
       email,
-      setor,
+      objetivo,
       mensagem,
     })
-      .then((retorno) => {
-        const { status } = retorno;
-
-        if (status === 201) {
-          setShowAlertSuccess(true);
-        } else {
-          setShowAlertDanger(true);
-        }
+      .then(() => {
+        setShowAlertSuccess(true);
       })
-      .catch(() => setShowAlertDanger(true))
+      .catch((err) => {
+        console.error(err);
+        setShowAlertDanger(true);
+      })
       .finally(() => {
         setNome("");
         setEmail("");
@@ -97,18 +81,28 @@ export default function Contato() {
       });
   };
 
-  async function SendContato({ nome, email, setor, mensagem }) {
+  async function SendContato({ nome, email, objetivo, mensagem, telefone }) {
     const response = await fetch("/api/contato", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
       },
-      body: JSON.stringify({ nome, email, setor, mensagem }),
+      body: JSON.stringify({
+        nome,
+        telefone,
+        email,
+        objetivo,
+        mensagem,
+      }),
     });
-    return {
-      status: response.status,
-      data: await response.json(),
-    };
+
+    const data = await response.json();
+
+    if (!response.ok) {
+      throw new Error(data.message || "Erro ao enviar");
+    }
+
+    return data;
   }
 
   return (
@@ -207,7 +201,27 @@ export default function Contato() {
                         error={error.nome}
                         helperText={error.nome ? "campo obrigatório" : ""}
                       />
-
+                      <TextField
+                        value={telefone || ""}
+                        type="tel"
+                        margin="normal"
+                        required
+                        fullWidth
+                        id="telefone"
+                        label="WhatsApp"
+                        name="telefone"
+                        onChange={(event) => setTelefone(event.target.value)}
+                        sx={{ marginLeft: ".5rem", marginRight: ".5rem" }}
+                        onFocus={() => {
+                          const newError = { ...error };
+                          newError.telefone = false;
+                          setError(newError);
+                        }}
+                        error={error.telefone}
+                        helperText={error.telefone ? "campo obrigatório" : ""}
+                      />
+                    </div>
+                    <div className="w-full flex flex-row sm:flex-nowrap flex-wrap justify-between items-center mb-5">
                       <TextField
                         value={email || ""}
                         type="text"
@@ -235,28 +249,55 @@ export default function Contato() {
                       >
                         <FormControl fullWidth>
                           <InputLabel id="select-setor-label">
-                            Setor *
+                            Qual seu principal objetivo? *
                           </InputLabel>
                           <Select
                             labelId="select-setor-label"
-                            id="setor"
-                            name="setor"
-                            value={setor || ""}
-                            label="Setor *"
+                            id="objetivo"
+                            name="objetivo"
+                            value={objetivo || ""}
+                            label="Qual seu principal objetivo? *"
                             required
-                            error={error.setor}
-                            onChange={(event) => setSetor(event.target.value)}
+                            error={error.objetivo}
+                            onChange={(event) =>
+                              setObjetivo(event.target.value)
+                            }
                             onFocus={() => {
                               const newError = { ...error };
-                              newError.setor = false;
+                              newError.objetivo = false;
                               setError(newError);
                             }}
                           >
-                            <MenuItem key={"comercial"} value={"comercial"}>
-                              Comercial
+                            <MenuItem value="Conseguir mais clientes">
+                              Conseguir mais clientes
                             </MenuItem>
-                            <MenuItem key={"financeiro"} value={"financeiro"}>
-                              Financeiro
+
+                            <MenuItem value="Aumentar vendas">
+                              Aumentar vendas
+                            </MenuItem>
+
+                            <MenuItem value="Melhorar presença digital">
+                              Melhorar presença digital
+                            </MenuItem>
+
+                            <MenuItem value="Criar um site">
+                              Criar um site
+                            </MenuItem>
+
+                            <MenuItem value="Fortalecer a marca">
+                              Fortalecer a marca
+                            </MenuItem>
+
+                            <MenuItem value="Aparecer no Google">
+                              Aparecer no Google
+                            </MenuItem>
+
+                            <MenuItem value="Automatizar processos">
+                              Automatizar processos
+                            </MenuItem>
+
+                            <MenuItem value="Não sei qual a melhor solução">
+                              Não sei qual a melhor solução
                             </MenuItem>
                           </Select>
                           {error.setor && (
@@ -303,7 +344,13 @@ export default function Contato() {
       <section className={styles.cta}>
         <h2>Prefere falar diretamente pelo WhatsApp?</h2>
 
-        <a href="https://wa.me/5554981168850">Iniciar conversa</a>
+        <a
+          href="https://wa.me/5554981168850"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Iniciar conversa
+        </a>
       </section>
 
       <Rodape />

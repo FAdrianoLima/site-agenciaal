@@ -518,4 +518,101 @@
   .case img {
     height: 300px;
   }
+
+  .interno,
+  .internoTimeline {
+    width: 100%;
+    max-width: 22rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+  }
+
+  .backgroundAbout,
+  .backgroundDark,
+  .backgroundCases,
+  .backgroundProcess,
+  .backgroundTech,
+  .backgroundNumbers,
+  .backgroundManifesto {
+    padding: 3rem 0rem;
+  }
+
+  .backgroundDark h2,
+  .backgroundServices h2,
+  .backgroundProcess h2,
+  .backgroundTech h2 {
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  .gridDif,
+  .caseGrid {
+    width: 100%;
+    grid-template-columns: 1fr;
+  }
+
+  .cardDif {
+    padding: 2rem;
+  }
+
+  .cardDif h3 {
+    font-size: 1.5rem;
+  }
+
+  .serviceItem {
+    gap: 1rem;
+  }
+
+  .serviceItem h3 {
+    font-size: 1.4rem;
+  }
+
+  .timeline {
+    width: 100%;
+    margin-top: 2rem;
+  }
+
+  .timeline div {
+    font-size: 1.2rem;
+  }
+
+  .techGrid {
+    margin-left: 0;
+    justify-content: center;
+  }
+
+  .backgroundNumbers .interno {
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 3rem;
+  }
+
+  .numberCard h2 {
+    font-size: 3rem;
+  }
+
+  .backgroundManifesto p {
+    font-size: 1rem;
+    line-height: 1.7;
+  }
+
+  .ctaFinal {
+    min-height: 25rem;
+    height: 100%;
+    max-height: 25rem;
+    padding: 2rem 1rem;
+  }
+
+  .ctaFinal h2 {
+    font-size: 2.5rem;
+  }
+
+  .ctaFinal a {
+    width: 100%;
+    max-width: 22rem;
+    text-align: center;
+    padding: 1rem;
+  }
 }

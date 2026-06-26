@@ -53,7 +53,10 @@ function Menu() {
 
         <button
           className={styles.mobileButton}
-          onClick={() => setMobile(!mobile)}
+          onClick={() => {
+            console.log("clicou");
+            setMobile(!mobile);
+          }}
         >
           <span />
           <span />
