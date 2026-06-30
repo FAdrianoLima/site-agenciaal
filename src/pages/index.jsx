@@ -4,7 +4,6 @@ import Rodape from "../components/rodape";
 import Whats from "../components/whats";
 import RodapeAl from "../components/rodape-al";
 import styles from "../styles/Index.module.css";
-import "../styles/Index.module.css";
 import React, { useState } from "react";
 import Link from "next/link";
 import { useEffect, useRef } from "react";
@@ -43,16 +42,28 @@ export default function Home() {
               src="/static/images/parceiros/Integrity-buildingg.png"
               alt=""
             />
-            <img src="/static/images/parceiros/DV-Adv.png" alt="" />
-            <img src="/static/images/parceiros/Personal-Sabrina.png" alt="" />
-            <img src="/static/images/parceiros/Marcon.png" alt="" />
-            <img src="/static/images/parceiros/longhi-episs.png" alt="" />
-            <img src="/static/images/parceiros/Polipisoo.png" alt="" />
-            <img src="/static/images/parceiros/ckf.png" alt="" />
-            <img src="/static/images/parceiros/maxxi-consultoriaa.png" alt="" />
+            <img src="/static/images/parceiros/DV-Adv.png" alt="logo DV Adv" />
+            <img
+              src="/static/images/parceiros/Personal-Sabrina.png"
+              alt="logo Personal Sabrina"
+            />
+            <img src="/static/images/parceiros/Marcon.png" alt="logo Marcon" />
+            <img
+              src="/static/images/parceiros/longhi-episs.png"
+              alt="logo Longhi Episs"
+            />
+            <img
+              src="/static/images/parceiros/Polipisoo.png"
+              alt="logo Polipisoo"
+            />
+            <img src="/static/images/parceiros/ckf.png" alt="logo CKF" />
+            <img
+              src="/static/images/parceiros/maxxi-consultoriaa.png"
+              alt="logo Maxxi Consultoria"
+            />
             <img
               src="/static/images/parceiros/Inovar-climatizacaoo.png"
-              alt=""
+              alt="logo Inovar Climatização"
             />
           </div>
         </div>
@@ -105,31 +116,42 @@ export default function Home() {
           </div>
         </div>
       </section>
+      {/* CASES
       <section className={styles.backgroundCases}>
         <div className={styles.interno}>
           <h2>Projetos em destaque</h2>
 
           <div className={styles.caseGrid}>
             <div className={styles.case}>
-              <img src="/static/images/cases/case1.jpg" />
+              <img
+                src="/static/images/cases/case1.jpg"
+                alt="Projeto de website desenvolvido"
+              />
               <h3>Cliente X</h3>
               <p>Website + Posicionamento</p>
             </div>
 
             <div className={styles.case}>
-              <img src="/static/images/cases/case2.jpg" />
+              <img
+                src="/static/images/cases/case2.jpg"
+                alt="Campanha digital desenvolvida"
+              />
               <h3>Cliente Y</h3>
               <p>Campanha Digital</p>
             </div>
 
             <div className={styles.case}>
-              <img src="/static/images/cases/case3.jpg" />
+              <img
+                src="/static/images/cases/case3.jpg"
+                alt="Projeto de branding desenvolvido"
+              />
               <h3>Cliente Z</h3>
               <p>Branding</p>
             </div>
           </div>
         </div>
       </section>
+      */}
       <section className={styles.backgroundServices}>
         <div className={styles.interno}>
           <h2>O que fazemos</h2>
@@ -230,7 +252,13 @@ export default function Home() {
       <section className={styles.ctaFinal}>
         <h2>Vamos conversar sobre o crescimento da sua empresa?</h2>
 
-        <a href="https://wa.me/SEUNUMERO">Solicitar Diagnóstico Gratuito</a>
+        <a
+          href="https://wa.me/5554981168850"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Solicitar Diagnóstico Gratuito
+        </a>
       </section>
 
       <Rodape />

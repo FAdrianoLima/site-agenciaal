@@ -30,7 +30,7 @@
   text-align: center;
 }
 
-.box h4 {
+.box h2 {
   margin-top: 10px;
   font-size: 24px;
   font-weight: 500;
@@ -38,7 +38,7 @@
   line-height: 1.4;
 }
 
-.box h2 {
+.box h1 {
   font-size: 128px;
   font-weight: 600;
   line-height: 1;
@@ -56,7 +56,7 @@
 .botao {
   z-index: 123456;
   width: 100%;
-  max-width: 35rem;
+  max-width: 25rem;
   margin-top: 3rem;
   background: #bff747;
   color: #000;
@@ -93,11 +93,11 @@
 
 /* TABLET */
 @media (max-width: 1024px) {
-  .box h2 {
+  .box h1 {
     font-size: 80px;
   }
 
-  .box h4 {
+  .box h2 {
     font-size: 20px;
   }
 }
@@ -121,12 +121,12 @@
     max-width: 20rem;
   }
 
-  .box h2 {
+  .box h1 {
     font-size: 84px;
     line-height: 1.1;
   }
 
-  .box h4 {
+  .box h2 {
     font-size: 16px;
     line-height: 1.5;
     margin-top: 1rem;

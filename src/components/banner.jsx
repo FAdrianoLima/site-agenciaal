@@ -6,25 +6,25 @@ function Banner() {
     <section className={styles.background}>
       <div className={styles.interno}>
         <div className={styles.box}>
-          <h2>
+          <h1>
             A sua <span style={{ color: "#d82087" }}>agência</span>
-          </h2>
-          <h4>
+          </h1>
+          <h2>
             Somos{" "}
             <span style={{ color: "#d82087", fontWeight: "300" }}>
               a agência digital que vai acelerar
             </span>{" "}
             sua transformação digital.
-          </h4>
+          </h2>
           {/* risco
           <img
           src="/static/images/risco.png"
           />
           */}
 
-          <Link legacyBehavior href="/">
+          <Link legacyBehavior href="/contato">
             <a className={styles.botao} target="_blank">
-              Fale conosco e tenha uma consultoria sem compromisso!
+              Fale conosco e tire suas dúvidas!
             </a>
           </Link>
         </div>

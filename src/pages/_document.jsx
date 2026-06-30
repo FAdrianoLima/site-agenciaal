@@ -11,20 +11,49 @@ class DocumentosSite extends Document {
     return (
       <Html>
         <Head>
-          <link rel="icon" href="/favicon.png" />
-          <title>Agência AL</title>
-          <meta name="description" content="Agência AL de Marketing" />
+          <title>Agência AL | Marketing Digital, Websites e Tecnologia</title>
+
+          <meta
+            name="description"
+            content="Agência AL especializada em Marketing Digital, Desenvolvimento de Websites, SEO, Google Ads, Meta Ads, Branding e Tecnologia para empresas."
+          />
+
           <meta
             name="keywords"
-            content="agencia de marketing, marketing barato, agencia de marketing custo-beneficio, agencia de marketing em caxais do sul, caxias do sul, marketing para empresa, marketing MEI, Marketing Industria "
+            content="Agência AL, agência de marketing, marketing digital, desenvolvimento web, websites, SEO, Google Ads, Meta Ads, branding, Caxias do Sul"
           />
+
           <meta name="author" content="Agência AL" />
-          <link
-            rel="stylesheet"
-            href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+          <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+          <meta property="og:type" content="website" />
+          <meta property="og:title" content="Agência AL" />
+          <meta
+            property="og:description"
+            content="Marketing, Tecnologia e Comunicação unidos para gerar resultados."
           />
+          <meta property="og:url" content="https://www.agenciaal.com.br" />
+          <meta
+            property="og:image"
+            content="https://www.agenciaal.com.br/og.jpg"
+          />
+
+          <meta name="twitter:card" content="summary_large_image" />
+
+          <link rel="canonical" href="https://www.agenciaal.com.br/" />
+
+          <link rel="icon" href="/favicon.png" />
+
+          <link rel="preconnect" href="https://fonts.googleapis.com" />
+
           <link
-            href="https://fonts.googleapis.com/css2?family=Syne:wght@400..800&display=swap"
+            rel="preconnect"
+            href="https://fonts.gstatic.com"
+            crossOrigin="anonymous"
+          />
+
+          <link
+            href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Syne:wght@400;500;600;700;800&display=swap"
             rel="stylesheet"
           />
           <link

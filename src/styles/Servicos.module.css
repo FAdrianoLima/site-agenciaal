@@ -104,10 +104,6 @@
   color: #d8ff3e;
 }
 
-.serviceItem:hover h3 {
-  color: #d82087;
-}
-
 /* DIFERENCIAIS */
 
 .diferenciais {
@@ -446,7 +442,6 @@
 }
 
 .stats h3 {
-  color: #d82087;
   margin-bottom: 0.5rem;
 }
 

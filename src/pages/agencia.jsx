@@ -102,17 +102,17 @@ export default function Agencia() {
       <section className={styles.numeros}>
         <div className={styles.interno}>
           <div className={styles.numero}>
-            <h2>+6</h2>
+            <h2>+7</h2>
             <span>Anos de experiência</span>
           </div>
 
           <div className={styles.numero}>
-            <h2>+100</h2>
+            <h2>+300</h2>
             <span>Projetos realizados</span>
           </div>
 
           <div className={styles.numero}>
-            <h2>+20</h2>
+            <h2>+30</h2>
             <span>Segmentos atendidos</span>
           </div>
 
@@ -140,6 +140,7 @@ export default function Agencia() {
         </div>
       </section>
 
+      {/*
       <section className={styles.galeria}>
         <div className={styles.internoColumn}>
           <h2>Por trás de cada projeto existe estratégia.</h2>
@@ -152,6 +153,7 @@ export default function Agencia() {
           </div>
         </div>
       </section>
+      */}
 
       <section className={styles.manifesto}>
         <div className={styles.internoColumn}>
