@@ -229,15 +229,6 @@
   max-width: 80rem;
 }
 
-.box {
-  width: 100%;
-  max-width: 40rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start;
-}
-
 .box h3 {
   font-size: 30px;
   margin-bottom: 1rem;
@@ -273,11 +264,11 @@
 
 .box {
   width: 100%;
-  max-width: 80rem;
+  max-width: 40rem;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  justify-content: flex-start;
+  align-items: flex-start;
 }
 
 .titulo {

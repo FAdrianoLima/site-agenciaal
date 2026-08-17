@@ -12,60 +12,64 @@ export default function anewfly() {
       <Menu />
       <section className={styles.hero}>
         <div className={styles.interno}>
-          <span>PORTFÓLIO</span>
+          <div className={styles.box}>
+            <span>PORTFÓLIO</span>
 
-          <h1>
-            Projetos que
-            <br />
-            geraram resultado.
-          </h1>
+            <h1>
+              Projetos que
+              <br />
+              geraram resultado.
+            </h1>
 
-          <p>
-            Websites, branding, campanhas e estratégias desenvolvidas para
-            empresas que decidiram crescer de forma profissional.
-          </p>
+            <p>
+              Websites, branding, campanhas e estratégias desenvolvidas para
+              empresas que decidiram crescer de forma profissional.
+            </p>
+          </div>
         </div>
       </section>
 
       <section className={styles.cases}>
         <div className={styles.internoColumn}>
           <div className={styles.gridCases}>
-            <Link legacyBehavior href="/allora">
+            {/* DV ADVOCACIA */}
+            <Link legacyBehavior href="/dvadvocacia">
               <a className={styles.caseCard}>
-                <img src="/static/images/cases/Allora.png" />
+                <img src="/static/images/cases/adv-00.jpg" alt="DV Advocacia" />
+
                 <div className={styles.overlay}>
-                  <span>Website • Branding</span>
-                  <h3>Allora Jóias</h3>
+                  <span>Identidade Visual • Website</span>
+                  <h3>DV Advocacia</h3>
                 </div>
               </a>
             </Link>
 
-            <Link legacyBehavior href="/hanisch">
+            {/* POLIPISO CAXIAS */}
+            <Link legacyBehavior href="/polipiso">
               <a className={styles.caseCard}>
-                <img src="/static/images/cases/Hanisch.png" />
+                <img
+                  src="/static/images/cases/polipiso-02.jpg"
+                  alt="Polipiso Caxias"
+                />
+
                 <div className={styles.overlay}>
-                  <span>Website</span>
-                  <h3>Hanisch Medical</h3>
+                  <span>Website • E-mail Marketing</span>
+                  <h3>Polipiso Caxias</h3>
                 </div>
               </a>
             </Link>
 
-            <Link legacyBehavior href="/mercatto">
+            {/* LONGHI */}
+            <Link legacyBehavior href="/longhi">
               <a className={styles.caseCard}>
-                <img src="/static/images/cases/Mercatto.png" />
-                <div className={styles.overlay}>
-                  <span>Marketing</span>
-                  <h3>Mercatto</h3>
-                </div>
-              </a>
-            </Link>
+                <img
+                  src="/static/images/cases/longhi-00.jpg"
+                  alt="Longhi Equipamentos de Segurança"
+                />
 
-            <Link legacyBehavior href="/rpp">
-              <a className={styles.caseCard}>
-                <img src="/static/images/cases/RPP.png" />
                 <div className={styles.overlay}>
-                  <span>Institucional</span>
-                  <h3>RPP Construtora</h3>
+                  <span>Impressos • E-mail Marketing</span>
+                  <h3>Longhi Equipamentos de Segurança</h3>
                 </div>
               </a>
             </Link>
