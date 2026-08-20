@@ -3,7 +3,7 @@ import Rodape from "../components/rodape";
 import RodapeAl from "../components/rodape-al";
 import styles from "../styles/Cases.module.css";
 
-export default function Longhi() {
+export default function PetlandDistribuicao() {
   return (
     <>
       <Menu />
@@ -25,8 +25,8 @@ export default function Longhi() {
           }}
         >
           <img
-            src="/static/images/cases/Longhi-capa.jpg"
-            alt="Longhi Equipamentos de Segurança"
+            src="/static/images/cases/petland-00.jpg"
+            alt="Petland Distribuição"
             style={{
               display: "block",
               width: "100%",
@@ -40,7 +40,7 @@ export default function Longhi() {
               left: "8%",
               bottom: "10%",
               zIndex: 2,
-              maxWidth: "700px",
+              maxWidth: "750px",
             }}
           >
             <h1
@@ -52,7 +52,7 @@ export default function Longhi() {
                 color: "#fff",
               }}
             >
-              Comunicação que protege uma marca forte.
+              Presença para ser lembrada.
             </h1>
 
             <p
@@ -63,8 +63,8 @@ export default function Longhi() {
                 color: "#fff",
               }}
             >
-              Estratégia, materiais e comunicação para a Longhi Equipamentos de
-              Segurança.
+              Comunicação e materiais para fortalecer a presença da Petland
+              Distribuição no mercado pet.
             </p>
           </div>
         </div>
@@ -103,7 +103,7 @@ export default function Longhi() {
               }}
               className={styles.titulo}
             >
-              LONGHI
+              PETLAND
             </h3>
 
             <p
@@ -112,7 +112,7 @@ export default function Longhi() {
                 marginTop: "0",
               }}
             >
-              Equipamentos de Segurança
+              Distribuição
             </p>
           </div>
 
@@ -123,9 +123,10 @@ export default function Longhi() {
                 lineHeight: "1.6",
               }}
             >
-              A Longhi precisava fortalecer sua comunicação e tornar sua marca
-              ainda mais presente nos diferentes pontos de contato com seus
-              clientes e parceiros.
+              A Petland Distribuição atua na região de Curitiba atendendo
+              clínicas veterinárias, pet shops e outros negócios do mercado pet,
+              com um portfólio que reúne marcas reconhecidas como Royal Canin,
+              Pet Passion, Pethy Group e Wanpy.
             </p>
 
             <p
@@ -135,10 +136,10 @@ export default function Longhi() {
                 marginTop: "20px",
               }}
             >
-              O projeto envolveu a criação de materiais impressos, campanhas de
-              e-mail marketing e uma presença consistente nas redes sociais,
-              construindo uma comunicação alinhada ao posicionamento da empresa
-              e ao mercado de equipamentos de segurança.
+              O trabalho de comunicação foi desenvolvido para manter a empresa
+              presente e facilmente reconhecível por quem procura seus
+              distribuidores, além de apoiar o relacionamento comercial com
+              materiais digitais e impressos.
             </p>
           </div>
         </div>
@@ -159,17 +160,22 @@ export default function Longhi() {
         >
           <p>
             <img src="/static/images/bolinha.png" alt="" />
+            &nbsp; Social Media
+          </p>
+
+          <p>
+            <img src="/static/images/bolinha.png" alt="" />
+            &nbsp; Materiais para Campanhas
+          </p>
+
+          <p>
+            <img src="/static/images/bolinha.png" alt="" />
             &nbsp; Materiais Impressos
           </p>
 
           <p>
             <img src="/static/images/bolinha.png" alt="" />
-            &nbsp; E-mail Marketing
-          </p>
-
-          <p>
-            <img src="/static/images/bolinha.png" alt="" />
-            &nbsp; Social Media
+            &nbsp; Materiais Comerciais
           </p>
         </div>
       </section>
@@ -196,7 +202,7 @@ export default function Longhi() {
                 margin: 0,
               }}
             >
-              Comunicação que vai além do digital.
+              Nem toda comunicação precisa vender.
             </h2>
           </div>
 
@@ -207,17 +213,16 @@ export default function Longhi() {
                 lineHeight: "1.6",
               }}
             >
-              Para a Longhi, a comunicação precisava estar presente onde as
-              relações comerciais realmente acontecem. Por isso, os materiais
-              impressos tiveram papel central no projeto, criando ferramentas
-              para apresentar produtos, fortalecer a marca e apoiar o contato
-              com clientes.
+              Para uma distribuidora, estar presente também é estratégia. Quando
+              um pet shop, clínica veterinária ou outro negócio procura pelo
+              distribuidor de uma determinada marca, a Petland precisa estar
+              ali, ser reconhecida e transmitir confiança.
             </p>
           </div>
         </div>
       </section>
 
-      {/* DESTAQUE IMPRESSOS */}
+      {/* SOCIAL MEDIA */}
       <section
         className={styles.background}
         style={{
@@ -239,7 +244,7 @@ export default function Longhi() {
                 margin: 0,
               }}
             >
-              Materiais pensados para representar a marca.
+              Presença antes da conversão.
             </h2>
           </div>
 
@@ -250,10 +255,63 @@ export default function Longhi() {
                 lineHeight: "1.6",
               }}
             >
-              Catálogos, apresentações, materiais comerciais e diferentes peças
-              impressas foram desenvolvidos para levar a identidade da Longhi
-              para além das telas, com clareza, organização e consistência
-              visual.
+              A estratégia nas redes sociais não parte da venda direta. O
+              objetivo é manter a Petland presente no mercado, fortalecer sua
+              marca e facilitar o reconhecimento por profissionais que já
+              procuram as marcas distribuídas pela empresa.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* MATERIAIS IMPRESSOS */}
+      <section
+        className={styles.background}
+        style={{
+          marginTop: "70px",
+        }}
+      >
+        <div
+          className={styles.interno}
+          style={{
+            alignItems: "center",
+          }}
+        >
+          <div className={styles.box}>
+            <h2
+              style={{
+                fontSize: "38px",
+                lineHeight: "1.2",
+                fontWeight: "600",
+                margin: 0,
+              }}
+            >
+              Comunicação que também acontece no ponto de contato.
+            </h2>
+          </div>
+
+          <div className={styles.box}>
+            <p
+              style={{
+                fontSize: "22px",
+                lineHeight: "1.6",
+              }}
+            >
+              Além das redes sociais, desenvolvemos materiais para campanhas
+              obrigatórias dos distribuidores e peças utilizadas diariamente
+              pela equipe comercial e pela empresa.
+            </p>
+
+            <p
+              style={{
+                fontSize: "22px",
+                lineHeight: "1.6",
+                marginTop: "20px",
+              }}
+            >
+              Cartões, flyers, crachás, planilhas de venda e outros materiais
+              foram desenvolvidos para manter consistência visual e facilitar a
+              comunicação em diferentes situações.
             </p>
           </div>
         </div>
@@ -269,41 +327,41 @@ export default function Longhi() {
       >
         <div className={styles.interno2}>
           <img
-            src="/static/images/cases/longhi-00.jpg"
-            alt="Longhi Equipamentos de Segurança - Projeto"
+            src="/static/images/cases/petland-00.jpg"
+            alt="Petland Distribuição - Projeto"
           />
 
           <span style={{ margin: "2rem 0rem" }}></span>
 
           <img
-            src="/static/images/cases/longhi-01.jpg"
-            alt="Longhi Equipamentos de Segurança - Materiais impressos"
+            src="/static/images/cases/petland-01.jpg"
+            alt="Petland Distribuição - Social Media"
           />
 
           <span style={{ margin: "2rem 0rem" }}></span>
 
           <img
-            src="/static/images/cases/longhi-02.jpg"
-            alt="Longhi Equipamentos de Segurança - Materiais comerciais"
+            src="/static/images/cases/petland-02.jpg"
+            alt="Petland Distribuição - Campanhas"
           />
 
           <span style={{ margin: "2rem 0rem" }}></span>
 
           <img
-            src="/static/images/cases/longhi-03.jpg"
-            alt="Longhi Equipamentos de Segurança - E-mail Marketing"
+            src="/static/images/cases/petland-03.jpg"
+            alt="Petland Distribuição - Materiais Impressos"
           />
 
           <span style={{ margin: "2rem 0rem" }}></span>
 
           <img
-            src="/static/images/cases/longhi-04.jpg"
-            alt="Longhi Equipamentos de Segurança - Comunicação"
+            src="/static/images/cases/petland-04.jpg"
+            alt="Petland Distribuição - Materiais Comerciais"
           />
         </div>
       </section>
 
-      {/* SOCIAL MEDIA */}
+      {/* FECHAMENTO */}
       <section
         className={styles.background}
         style={{
@@ -326,7 +384,7 @@ export default function Longhi() {
                 margin: 0,
               }}
             >
-              Presença para fortalecer a marca.
+              Estar presente também é fazer parte da escolha.
             </h2>
           </div>
 
@@ -337,10 +395,9 @@ export default function Longhi() {
                 lineHeight: "1.6",
               }}
             >
-              Nas redes sociais, o objetivo foi diferente de uma comunicação
-              focada diretamente em conversão. O trabalho buscou fortalecer a
-              presença da Longhi, reforçar sua autoridade e manter a marca
-              próxima do seu público de forma constante e profissional.
+              Para a Petland Distribuição, construímos uma comunicação que
+              acompanha a empresa onde ela está: nas redes, nas campanhas, nos
+              materiais comerciais e nos contatos do dia a dia.
             </p>
           </div>
         </div>

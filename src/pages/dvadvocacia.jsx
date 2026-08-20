@@ -25,7 +25,7 @@ export default function DvAdvocacia() {
           }}
         >
           <img
-            src="/static/images/cases/adv-00.jpg"
+            src="/static/images/cases/adv-capa.jpg"
             alt="DV Advocacia"
             style={{
               display: "block",

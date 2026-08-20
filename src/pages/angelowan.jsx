@@ -3,7 +3,7 @@ import Rodape from "../components/rodape";
 import RodapeAl from "../components/rodape-al";
 import styles from "../styles/Cases.module.css";
 
-export default function PolipisoCaxias() {
+export default function AngeloWan() {
   return (
     <>
       <Menu />
@@ -25,8 +25,8 @@ export default function PolipisoCaxias() {
           }}
         >
           <img
-            src="/static/images/cases/polipiso-capa.jpg"
-            alt="Polipiso Caxias"
+            src="/static/images/cases/angelo-capa.jpg"
+            alt="Angelo Wan Mentor"
             style={{
               display: "block",
               width: "100%",
@@ -40,7 +40,7 @@ export default function PolipisoCaxias() {
               left: "8%",
               bottom: "10%",
               zIndex: 2,
-              maxWidth: "700px",
+              maxWidth: "750px",
             }}
           >
             <h1
@@ -52,7 +52,7 @@ export default function PolipisoCaxias() {
                 color: "#fff",
               }}
             >
-              Uma marca que pisa forte.
+              Conhecimento que vira conteúdo.
             </h1>
 
             <p
@@ -63,7 +63,8 @@ export default function PolipisoCaxias() {
                 color: "#fff",
               }}
             >
-              Estratégia e presença digital para a Polipiso Caxias.
+              Estratégia e produção de conteúdo para fortalecer a presença
+              digital de Angelo Wan.
             </p>
           </div>
         </div>
@@ -102,8 +103,17 @@ export default function PolipisoCaxias() {
               }}
               className={styles.titulo}
             >
-              POLIPISO CAXIAS
+              ANGELO WAN
             </h3>
+
+            <p
+              style={{
+                fontSize: "20px",
+                marginTop: "0",
+              }}
+            >
+              Mentor
+            </p>
           </div>
 
           <div className={styles.box}>
@@ -113,9 +123,9 @@ export default function PolipisoCaxias() {
                 lineHeight: "1.6",
               }}
             >
-              Com experiência e especialização em pisos de concreto, a Polipiso
-              Caxias precisava fortalecer sua presença digital e apresentar seus
-              serviços de forma mais profissional e estratégica.
+              O trabalho com Angelo Wan nasceu da necessidade de transformar
+              conhecimento, experiências e reflexões em uma presença digital
+              constante, relevante e conectada ao seu público.
             </p>
 
             <p
@@ -125,9 +135,9 @@ export default function PolipisoCaxias() {
                 marginTop: "20px",
               }}
             >
-              O projeto integrou identidade, comunicação e presença digital para
-              aproximar a marca de novos clientes e valorizar a qualidade dos
-              serviços oferecidos.
+              A partir de uma estratégia de conteúdo contínua, cuidamos da
+              produção para diferentes plataformas, aproveitando cada gravação,
+              evento e momento relevante para gerar novos conteúdos.
             </p>
           </div>
         </div>
@@ -148,22 +158,27 @@ export default function PolipisoCaxias() {
         >
           <p>
             <img src="/static/images/bolinha.png" alt="" />
-            &nbsp; Desenvolvimento do Logo
+            &nbsp; Social Media
           </p>
 
           <p>
             <img src="/static/images/bolinha.png" alt="" />
-            &nbsp; Website
+            &nbsp; Edição de Cortes
           </p>
 
           <p>
             <img src="/static/images/bolinha.png" alt="" />
-            &nbsp; E-mail Marketing
+            &nbsp; Conteúdo para Instagram e TikTok
           </p>
 
           <p>
             <img src="/static/images/bolinha.png" alt="" />
-            &nbsp; Google Business
+            &nbsp; Conteúdo para YouTube
+          </p>
+
+          <p>
+            <img src="/static/images/bolinha.png" alt="" />
+            &nbsp; Cobertura de Eventos
           </p>
         </div>
       </section>
@@ -190,8 +205,7 @@ export default function PolipisoCaxias() {
                 margin: 0,
               }}
             >
-              Mais do que uma presença digital. Uma marca preparada para
-              crescer.
+              Uma ideia pode render muito mais do que um conteúdo.
             </h2>
           </div>
 
@@ -202,9 +216,51 @@ export default function PolipisoCaxias() {
                 lineHeight: "1.6",
               }}
             >
-              O trabalho foi pensado para criar uma comunicação mais clara,
-              profissional e estratégica, conectando a Polipiso Caxias ao
-              público que busca soluções em pisos e revestimentos.
+              O trabalho parte de uma lógica simples: aproveitar melhor cada
+              conteúdo produzido. Uma palestra, uma entrevista ou uma gravação
+              pode se transformar em diversos formatos, adaptados ao
+              comportamento de cada plataforma.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* CORTES */}
+      <section
+        className={styles.background}
+        style={{
+          marginTop: "30px",
+        }}
+      >
+        <div
+          className={styles.interno}
+          style={{
+            alignItems: "center",
+          }}
+        >
+          <div className={styles.box}>
+            <h2
+              style={{
+                fontSize: "38px",
+                lineHeight: "1.2",
+                fontWeight: "600",
+                margin: 0,
+              }}
+            >
+              De uma gravação para várias plataformas.
+            </h2>
+          </div>
+
+          <div className={styles.box}>
+            <p
+              style={{
+                fontSize: "22px",
+                lineHeight: "1.6",
+              }}
+            >
+              A produção de cortes permite identificar os melhores momentos de
+              cada gravação e transformá-los em conteúdos rápidos, relevantes e
+              adaptados para Instagram, TikTok e YouTube.
             </p>
           </div>
         </div>
@@ -220,37 +276,79 @@ export default function PolipisoCaxias() {
       >
         <div className={styles.interno2}>
           <img
-            src="/static/images/cases/polipiso-00.jpg"
-            alt="Polipiso Caxias - Projeto"
+            src="/static/images/cases/Angelo-00.jpg"
+            alt="Angelo Wan - Social Media"
           />
 
           <span style={{ margin: "2rem 0rem" }}></span>
 
           <img
-            src="/static/images/cases/polipiso-01.jpg"
-            alt="Polipiso Caxias - Logo"
+            src="/static/images/cases/Angelo-01.jpg"
+            alt="Angelo Wan - Conteúdo"
           />
 
           <span style={{ margin: "2rem 0rem" }}></span>
 
           <img
-            src="/static/images/cases/polipiso-02.jpg"
-            alt="Polipiso Caxias - Website"
+            src="/static/images/cases/Angelo-02.jpg"
+            alt="Angelo Wan - Cortes para redes sociais"
           />
 
           <span style={{ margin: "2rem 0rem" }}></span>
 
           <img
-            src="/static/images/cases/polipiso-03.jpg"
-            alt="Polipiso Caxias - E-mail Marketing"
+            src="/static/images/cases/Angelo-03.jpg"
+            alt="Angelo Wan - Instagram e TikTok"
           />
 
           <span style={{ margin: "2rem 0rem" }}></span>
 
           <img
-            src="/static/images/cases/polipiso-04.jpg"
-            alt="Polipiso Caxias - Google Business"
+            src="/static/images/cases/Angelo-04.jpg"
+            alt="Angelo Wan - YouTube e eventos"
           />
+        </div>
+      </section>
+
+      {/* EVENTOS */}
+      <section
+        className={styles.background}
+        style={{
+          marginTop: "30px",
+          paddingBottom: "100px",
+        }}
+      >
+        <div
+          className={styles.interno}
+          style={{
+            alignItems: "center",
+          }}
+        >
+          <div className={styles.box}>
+            <h2
+              style={{
+                fontSize: "38px",
+                lineHeight: "1.2",
+                fontWeight: "600",
+                margin: 0,
+              }}
+            >
+              Conteúdo também acontece fora do estúdio.
+            </h2>
+          </div>
+
+          <div className={styles.box}>
+            <p
+              style={{
+                fontSize: "22px",
+                lineHeight: "1.6",
+              }}
+            >
+              O acompanhamento de eventos também fez parte do projeto,
+              registrando momentos importantes e transformando experiências
+              presenciais em conteúdo para as redes.
+            </p>
+          </div>
         </div>
       </section>
 

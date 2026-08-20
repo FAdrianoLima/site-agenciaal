@@ -73,6 +73,36 @@ export default function anewfly() {
                 </div>
               </a>
             </Link>
+
+            {/* ANGELO */}
+            <Link legacyBehavior href="/angelowan">
+              <a className={styles.caseCard}>
+                <img
+                  src="/static/images/cases/angelo-00.jpg"
+                  alt="Angelo Wan"
+                />
+
+                <div className={styles.overlay}>
+                  <span>Social Media • Cortes</span>
+                  <h3>Angelo Wan Mentoria</h3>
+                </div>
+              </a>
+            </Link>
+
+            {/* PETLAND */}
+            <Link legacyBehavior href="/petland">
+              <a className={styles.caseCard}>
+                <img
+                  src="/static/images/cases/petland-00.jpg"
+                  alt="Petland Distribuição"
+                />
+
+                <div className={styles.overlay}>
+                  <span>Social Media • Impressos</span>
+                  <h3>Petland Distribuição</h3>
+                </div>
+              </a>
+            </Link>
           </div>
         </div>
       </section>
