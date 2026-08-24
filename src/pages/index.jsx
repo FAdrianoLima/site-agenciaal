@@ -116,42 +116,52 @@ export default function Home() {
           </div>
         </div>
       </section>
-      {/* CASES
       <section className={styles.backgroundCases}>
         <div className={styles.interno}>
           <h2>Projetos em destaque</h2>
 
           <div className={styles.caseGrid}>
-            <div className={styles.case}>
-              <img
-                src="/static/images/cases/case1.jpg"
-                alt="Projeto de website desenvolvido"
-              />
-              <h3>Cliente X</h3>
-              <p>Website + Posicionamento</p>
-            </div>
+            {/* DV ADVOCACIA */}
+            <Link legacyBehavior href="/dvadvocacia">
+              <a className={styles.case}>
+                <img
+                  src="/static/images/cases/adv-00.jpg"
+                  alt="DV Advocacia - Identidade Visual e Website"
+                />
 
-            <div className={styles.case}>
-              <img
-                src="/static/images/cases/case2.jpg"
-                alt="Campanha digital desenvolvida"
-              />
-              <h3>Cliente Y</h3>
-              <p>Campanha Digital</p>
-            </div>
+                <h3>DV Advocacia</h3>
+                <p>Identidade Visual + Website</p>
+              </a>
+            </Link>
 
-            <div className={styles.case}>
-              <img
-                src="/static/images/cases/case3.jpg"
-                alt="Projeto de branding desenvolvido"
-              />
-              <h3>Cliente Z</h3>
-              <p>Branding</p>
-            </div>
+            {/* LONGHI */}
+            <Link legacyBehavior href="/longhi">
+              <a className={styles.case}>
+                <img
+                  src="/static/images/cases/longhi-00.jpg"
+                  alt="Longhi Equipamentos de Segurança"
+                />
+
+                <h3>Longhi</h3>
+                <p>Impressos + E-mail Marketing</p>
+              </a>
+            </Link>
+
+            {/* ANGELO WAN */}
+            <Link legacyBehavior href="/angelowan">
+              <a className={styles.case}>
+                <img
+                  src="/static/images/cases/angelo-00.jpg"
+                  alt="Angelo Wan Mentor"
+                />
+
+                <h3>Angelo Wan</h3>
+                <p>Social Media + Conteúdo</p>
+              </a>
+            </Link>
           </div>
         </div>
       </section>
-      */}
       <section className={styles.backgroundServices}>
         <div className={styles.interno}>
           <h2>O que fazemos</h2>

@@ -212,6 +212,7 @@
   grid-template-columns: repeat(3, 1fr);
   gap: 2rem;
   margin-top: 4rem;
+  margin-left: 3rem;
 }
 
 .case {
