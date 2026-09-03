@@ -531,7 +531,6 @@
 
   .backgroundAbout,
   .backgroundDark,
-  .backgroundCases,
   .backgroundProcess,
   .backgroundTech,
   .backgroundNumbers,
@@ -547,10 +546,15 @@
     text-align: center;
   }
 
+  .backgroundCases {
+    padding: 0rem;
+  }
+
   .gridDif,
   .caseGrid {
     width: 100%;
     grid-template-columns: 1fr;
+    margin-left: 0;
   }
 
   .cardDif {

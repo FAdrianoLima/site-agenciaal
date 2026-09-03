@@ -1,0 +1,397 @@
+.interno {
+  width: 100%;
+  max-width: 80rem;
+  margin: auto;
+  padding: 0 2rem;
+}
+
+/* HERO */
+
+.hero {
+  min-height: 100vh;
+  background: #050505;
+  color: white;
+  display: flex;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.heroBg {
+  position: absolute;
+  inset: 0;
+  opacity: 0.035;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  pointer-events: none;
+}
+
+.heroBg span {
+  font-size: 11vw;
+  font-weight: 900;
+  line-height: 0.88;
+  white-space: nowrap;
+}
+
+.tag,
+.label {
+  color: #d8ff3e;
+  letter-spacing: 4px;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.hero h1 {
+  font-size: clamp(4rem, 9vw, 8rem);
+  line-height: 0.9;
+  margin: 2rem 0;
+  letter-spacing: -4px;
+}
+
+.sub {
+  max-width: 700px;
+  color: #999;
+  font-size: 1.3rem;
+  line-height: 1.5;
+}
+
+/* INTRO */
+
+.intro {
+  background: #fff;
+  padding: 9rem 0;
+}
+
+.intro .interno {
+  display: grid;
+  grid-template-columns: 180px 1fr;
+  gap: 4rem;
+}
+
+.introNumber {
+  font-size: 7rem;
+  font-weight: 800;
+  color: #e5e5e5;
+  line-height: 0.8;
+}
+
+.introContent {
+  max-width: 850px;
+}
+
+.introContent h2 {
+  font-size: clamp(3rem, 6vw, 6rem);
+  line-height: 0.9;
+  letter-spacing: -3px;
+  margin: 1.5rem 0 3rem;
+}
+
+.introContent p {
+  max-width: 700px;
+  font-size: 1.15rem;
+  line-height: 1.7;
+  color: #555;
+  margin-bottom: 1.3rem;
+}
+
+/* DESTAQUE */
+
+.destaque {
+  background: #050505;
+  color: white;
+  padding: 8rem 0;
+}
+
+.destaqueHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 3rem;
+  margin-bottom: 3rem;
+}
+
+.numero {
+  color: #d8ff3e;
+  font-size: 1rem;
+  letter-spacing: 3px;
+}
+
+.destaqueHeader h2 {
+  font-size: clamp(3rem, 6vw, 6rem);
+  line-height: 0.9;
+  letter-spacing: -3px;
+  margin-top: 1rem;
+}
+
+.destaqueHeader p {
+  max-width: 400px;
+  color: #888;
+  line-height: 1.6;
+}
+
+.videoPrincipal {
+  width: 100%;
+  background: #111;
+  overflow: hidden;
+}
+
+.videoPrincipal video {
+  display: block;
+  width: 100%;
+  max-height: 750px;
+  object-fit: cover;
+}
+
+/* PROJETOS */
+
+.projetos {
+  background: #fff;
+  padding: 9rem 0;
+}
+
+.projetosHeader {
+  margin-bottom: 5rem;
+}
+
+.projetosHeader h2 {
+  font-size: clamp(3.5rem, 7vw, 7rem);
+  line-height: 0.9;
+  letter-spacing: -4px;
+  margin-top: 1.5rem;
+}
+
+.videoGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 5rem 2rem;
+}
+
+.videoCard {
+  cursor: pointer;
+}
+
+.videoWrapper {
+  position: relative;
+  background: #080808;
+  overflow: hidden;
+}
+
+.videoWrapper iframe,
+.videoWrapper video {
+  width: 100%;
+  display: block;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+}
+
+.videoNumber {
+  position: absolute;
+  top: 1.5rem;
+  left: 1.5rem;
+  color: #d8ff3e;
+  font-size: 1rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  pointer-events: none;
+}
+
+.videoInfo {
+  padding-top: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+  border-top: 1px solid #ddd;
+  margin-top: 1rem;
+}
+
+.videoInfo h3 {
+  font-size: 1.8rem;
+  margin: 0;
+}
+
+.videoInfo p {
+  color: #666;
+  max-width: 350px;
+  line-height: 1.5;
+  margin: 0;
+}
+
+/* MANIFESTO */
+
+.manifesto {
+  background: #0a0a0a;
+  color: white;
+  padding: 10rem 0;
+}
+
+.manifesto .interno {
+  max-width: 80rem;
+}
+
+.manifesto h2 {
+  font-size: clamp(4rem, 8vw, 8rem);
+  line-height: 0.88;
+  letter-spacing: -5px;
+  margin: 2rem 0 3rem;
+}
+
+.manifesto p {
+  max-width: 650px;
+  color: #999;
+  font-size: 1.25rem;
+  line-height: 1.7;
+}
+
+/* CTA */
+
+.cta {
+  background: #d8ff3e;
+  color: #050505;
+  padding: 8rem 0;
+}
+
+.cta span {
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 4px;
+}
+
+.cta h2 {
+  font-size: clamp(3rem, 6vw, 6rem);
+  line-height: 0.9;
+  letter-spacing: -4px;
+  margin: 2rem 0 3rem;
+}
+
+.cta a {
+  display: inline-block;
+  width: 100%;
+  max-width: 25rem;
+  margin-top: 3rem;
+  padding: 1rem 1.5rem;
+
+  background: transparent;
+  color: #000000;
+
+  border: 3px solid #000000;
+  border-radius: 10rem;
+
+  font-size: 20px;
+  font-weight: 600;
+  text-align: center;
+  text-decoration: none;
+
+  cursor: pointer;
+
+  box-shadow: 0 6px 0 #000000;
+
+  transition:
+    transform 0.35s cubic-bezier(0.22, 1, 0.36, 1),
+    box-shadow 0.35s cubic-bezier(0.22, 1, 0.36, 1),
+    background 0.3s ease;
+}
+
+.cta a:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 0 #000;
+}
+
+.cta a:active {
+  transform: translateY(-2px);
+  box-shadow:
+    0 4px 0 #fff,
+    0 8px 15px rgba(0, 0, 0, 0.15);
+}
+
+/* RESPONSIVO */
+
+@media (max-width: 768px) {
+  .hero {
+    min-height: 85vh;
+  }
+
+  .hero h1 {
+    font-size: clamp(3.5rem, 17vw, 5rem);
+    letter-spacing: -2px;
+  }
+
+  .sub {
+    font-size: 1.05rem;
+  }
+
+  .intro {
+    padding: 6rem 0;
+  }
+
+  .intro .interno {
+    display: block;
+  }
+
+  .introNumber {
+    font-size: 4rem;
+    margin-bottom: 3rem;
+  }
+
+  .introContent h2 {
+    font-size: 3.5rem;
+    letter-spacing: -2px;
+  }
+
+  .destaque {
+    padding: 6rem 0;
+  }
+
+  .destaqueHeader {
+    display: block;
+  }
+
+  .destaqueHeader p {
+    margin-top: 2rem;
+  }
+
+  .destaqueHeader h2 {
+    font-size: 3.5rem;
+    letter-spacing: -2px;
+  }
+
+  .projetos {
+    padding: 6rem 0;
+  }
+
+  .projetosHeader h2 {
+    font-size: 3.8rem;
+    letter-spacing: -2px;
+  }
+
+  .videoGrid {
+    grid-template-columns: 1fr;
+    gap: 4rem;
+  }
+
+  .videoInfo {
+    display: block;
+  }
+
+  .videoInfo p {
+    margin-top: 1rem;
+  }
+
+  .manifesto {
+    padding: 7rem 0;
+  }
+
+  .manifesto h2 {
+    font-size: 4rem;
+    letter-spacing: -2px;
+  }
+
+  .cta {
+    padding: 6rem 0;
+  }
+
+  .cta h2 {
+    font-size: 3.5rem;
+    letter-spacing: -2px;
+  }
+}

@@ -79,6 +79,7 @@
   background: #fff;
   padding: 10rem 0;
 }
+
 .about .interno {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -369,6 +370,34 @@
   .grid,
   .gridFotos {
     grid-template-columns: 1fr;
+  }
+
+  .about .interno {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 22rem;
+  }
+
+  .timeline {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    max-width: 22rem;
+  }
+
+  .numeros .interno {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 22rem;
+  }
+
+  .internoColumn {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 22rem;
   }
 
   .about h2 {
