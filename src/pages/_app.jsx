@@ -39,19 +39,25 @@ function MyApp({ Component, pageProps }) {
   `}
       </Script>
 
+      {/* Brevo */}
+      <Script
+        src="https://cdn.brevo.com/js/sdk-loader.js"
+        strategy="afterInteractive"
+      />
 
-      <script src="https://cdn.brevo.com/js/sdk-loader.js" async></script>
-<script>
-    // Version: 2.0
-    window.Brevo = window.Brevo || [];
-    Brevo.push([
-        "init",
-        {
-        client_key: "43w4gqwzpxuhs3thydcz9m15",
-        // Optional: Add other initialization options, see documentation
-        }
-    ]);
-</script>
+      <Script id="brevo-tracker" strategy="afterInteractive">
+        {`
+          window.Brevo = window.Brevo || [];
+
+          window.Brevo.push([
+            "init",
+            {
+              client_key: "f09inoz30qqsg5mmku0sy2a5"
+            }
+          ]);
+        `}
+      </Script>
+
       <Component {...pageProps} />
     </>
   );
