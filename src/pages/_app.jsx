@@ -38,6 +38,20 @@ function MyApp({ Component, pageProps }) {
       gtag('config', 'AW-XXXXXXXXX');
   `}
       </Script>
+
+
+      <script src="https://cdn.brevo.com/js/sdk-loader.js" async></script>
+<script>
+    // Version: 2.0
+    window.Brevo = window.Brevo || [];
+    Brevo.push([
+        "init",
+        {
+        client_key: "43w4gqwzpxuhs3thydcz9m15",
+        // Optional: Add other initialization options, see documentation
+        }
+    ]);
+</script>
       <Component {...pageProps} />
     </>
   );
