@@ -42,6 +42,9 @@ function Menu() {
           <Link legacyBehavior href="/cases">
             <a>Cases</a>
           </Link>
+          <Link legacyBehavior href="/blog">
+            <a>Blog</a>
+          </Link>
           <Link legacyBehavior href="/contato">
             <a>Contato</a>
           </Link>

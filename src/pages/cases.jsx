@@ -6,7 +6,7 @@ import Carousel from "react-material-ui-carousel";
 import Link from "next/link";
 import RodapeAl from "../components/rodape-al";
 
-export default function anewfly() {
+export default function cases() {
   return (
     <>
       <Menu />
