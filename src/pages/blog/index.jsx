@@ -384,8 +384,7 @@ export default function Blog() {
               NÃO É SOBRE ACOMPANHAR TENDÊNCIAS.
             </span>
             <h2>
-              É sobre entender
-              <span> o que vem depois.</span>
+              É sobre entender o<span> que vem depois.</span>
             </h2>
             <p>
               O digital não para. E boas ideias também não. Continue explorando,

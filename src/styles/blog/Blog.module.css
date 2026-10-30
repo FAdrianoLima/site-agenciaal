@@ -53,7 +53,7 @@
   margin: 25px 0;
   font-family: "Syne", sans-serif;
   font-size: clamp(4rem, 9vw, 8rem);
-  font-weight: 600;
+  font-weight: 700;
   letter-spacing: -0.075em;
   line-height: 0.94;
 }
@@ -107,7 +107,7 @@
   margin: 15px 0 0;
   font-family: "Syne", sans-serif;
   font-size: clamp(2.2rem, 4vw, 3.6rem);
-  font-weight: 800;
+  font-weight: 700;
   letter-spacing: -0.055em;
   line-height: 1.05;
 }
@@ -293,7 +293,7 @@
   color: #fff;
   font-family: "Syne", sans-serif;
   font-size: 6rem;
-  font-weight: 800;
+  font-weight: 700;
 }
 
 .featuredInfo {
@@ -314,7 +314,7 @@
 
 .articleMeta span:first-child {
   color: #d82087;
-  font-weight: 800;
+  font-weight: 700;
   text-transform: uppercase;
 }
 
@@ -322,7 +322,7 @@
   margin: 25px 0 15px;
   font-family: "Syne", sans-serif;
   font-size: clamp(2rem, 3vw, 3rem);
-  font-weight: 800;
+  font-weight: 700;
   letter-spacing: -0.055em;
   line-height: 1.08;
 }
@@ -341,7 +341,7 @@
   margin-top: 30px;
   color: #111;
   font-size: 0.7rem;
-  font-weight: 800;
+  font-weight: 700;
   letter-spacing: 1.5px;
 }
 
@@ -397,7 +397,7 @@
   margin: 20px 0 12px;
   font-family: "Syne", sans-serif;
   font-size: 1.65rem;
-  font-weight: 800;
+  font-weight: 700;
   letter-spacing: -0.04em;
   line-height: 1.2;
 }
@@ -427,7 +427,7 @@
   border-top: 1px solid #eee;
   color: #777;
   font-size: 0.65rem;
-  font-weight: 800;
+  font-weight: 700;
   letter-spacing: 1.3px;
 }
 
@@ -496,7 +496,7 @@
   margin: 25px auto;
   font-family: "Syne", sans-serif;
   font-size: clamp(2.7rem, 6vw, 5.5rem);
-  font-weight: 800;
+  font-weight: 700;
   letter-spacing: -0.06em;
   line-height: 1;
 }
