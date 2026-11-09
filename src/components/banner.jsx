@@ -7,14 +7,13 @@ function Banner() {
       <div className={styles.interno}>
         <div className={styles.box}>
           <h1>
-            A sua <span style={{ color: "#d82087" }}>agência</span>
+            Uma agência em Caxias do Sul que vai &nbsp;
+            <span style={{ color: "#d82087", fontWeight: "300" }}>
+              acelerar sua transformação digital.
+            </span>
           </h1>
           <h2>
-            Somos{" "}
-            <span style={{ color: "#d82087", fontWeight: "300" }}>
-              a agência digital que vai acelerar
-            </span>{" "}
-            sua transformação digital.
+            A sua <span style={{ color: "#d82087" }}>agência</span>
           </h2>
           {/* risco
           <img

@@ -11,16 +11,19 @@ class DocumentosSite extends Document {
     return (
       <Html>
         <Head>
-          <title>Agência AL | Marketing Digital, Websites e Tecnologia</title>
+          <title>
+            Agência AL | Uma agência em Caxias do Sul que vai acelerar sua
+            transformação digital
+          </title>
 
           <meta
             name="description"
-            content="Agência AL especializada em Marketing Digital, Desenvolvimento de Websites, SEO, Google Ads, Meta Ads, Branding e Tecnologia para empresas."
+            content="Agência AL em Caxias do Sul: marketing estratégico, sites, desenvolvimento Web, gestão de redes sociais, foto e vídeo. Peça seu diagnóstico gratuito."
           />
 
           <meta
             name="keywords"
-            content="Agência AL, agência de marketing, marketing digital, desenvolvimento web, websites, SEO, Google Ads, Meta Ads, branding, Caxias do Sul"
+            content="Agência AL, agência de marketing, marketing digital, desenvolvimento web, websites, Caxias do Sul"
           />
 
           <meta name="author" content="Agência AL" />

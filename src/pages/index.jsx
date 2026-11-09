@@ -33,37 +33,49 @@ export default function Home() {
       <section className={`${styles.bgcarroussel} `}>
         <div className={styles.carrossel}>
           <div className={styles.track} ref={trackRef}>
-            <img src="/static/images/parceiros/angelo-wan-mentorr.png" alt="" />
+            <img
+              src="/static/images/parceiros/angelo-wan-mentorr.png"
+              alt="Logo Angelo Wan Mentor Cliente da Agência AL"
+            />
             <img
               src="/static/images/parceiros/petland-distribuicao.png"
-              alt=""
+              alt="Logo Petland Distribuição Cliente da Agência AL"
             />
             <img
               src="/static/images/parceiros/Integrity-buildingg.png"
-              alt=""
+              alt="Logo Integrity Building Cliente da Agência AL"
             />
-            <img src="/static/images/parceiros/DV-Adv.png" alt="logo DV Adv" />
+            <img
+              src="/static/images/parceiros/DV-Adv.png"
+              alt="Logo DV Adv Cliente da Agência AL"
+            />
             <img
               src="/static/images/parceiros/Personal-Sabrina.png"
-              alt="logo Personal Sabrina"
+              alt="Logo Personal Sabrina Cliente da Agência AL"
             />
-            <img src="/static/images/parceiros/Marcon.png" alt="logo Marcon" />
+            <img
+              src="/static/images/parceiros/Marcon.png"
+              alt="Logo Marcon Cliente da Agência AL"
+            />
             <img
               src="/static/images/parceiros/longhi-episs.png"
-              alt="logo Longhi Episs"
+              alt="Logo Longhi Episs Cliente da Agência AL"
             />
             <img
               src="/static/images/parceiros/Polipisoo.png"
-              alt="logo Polipisoo"
+              alt="Logo Polipisoo Cliente da Agência AL"
             />
-            <img src="/static/images/parceiros/ckf.png" alt="logo CKF" />
+            <img
+              src="/static/images/parceiros/ckf.png"
+              alt="Logo CKF Cliente da Agência AL"
+            />
             <img
               src="/static/images/parceiros/maxxi-consultoriaa.png"
-              alt="logo Maxxi Consultoria"
+              alt="Logo Maxxi Consultoria Cliente da Agência AL"
             />
             <img
               src="/static/images/parceiros/Inovar-climatizacaoo.png"
-              alt="logo Inovar Climatização"
+              alt="Logo Inovar Climatização Cliente da Agência AL"
             />
           </div>
         </div>
@@ -76,10 +88,7 @@ export default function Home() {
           </div>
 
           <div className={styles.aboutContent}>
-            <h2>
-              Marketing, tecnologia e comunicação unidos para gerar resultados
-              reais.
-            </h2>
+            <h2>Marketing, tecnologia e comunicação em Caxias do Sul.</h2>
 
             <p>
               Atuamos desde o posicionamento da marca até o desenvolvimento de
@@ -199,15 +208,25 @@ export default function Home() {
           <h2>Como trabalhamos</h2>
 
           <div className={styles.timeline}>
-            <div>01 Diagnóstico</div>
+            <div>
+              <h3>01 Diagnóstico</h3>
+            </div>
 
-            <div>02 Planejamento</div>
+            <div>
+              <h3>02 Planejamento</h3>
+            </div>
 
-            <div>03 Execução</div>
+            <div>
+              <h3>03 Execução</h3>
+            </div>
 
-            <div>04 Acompanhamento</div>
+            <div>
+              <h3>04 Acompanhamento</h3>
+            </div>
 
-            <div>05 Crescimento</div>
+            <div>
+              <h3>05 Crescimento</h3>
+            </div>
           </div>
         </div>
       </section>

@@ -325,6 +325,12 @@
   position: relative;
 }
 
+.timeline div h3 {
+  font-size: 2rem;
+  font-weight: 400;
+  font-family: Roboto;
+}
+
 .timeline div::before {
   content: "";
   width: 14px;
