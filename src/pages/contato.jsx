@@ -14,6 +14,7 @@ import Select from "@mui/material/Select";
 import Button from "@mui/material/Button";
 import MuiAlert from "@mui/material/Alert";
 import Snackbar from "@mui/material/Snackbar";
+import SeoHead from "../components/SeoHead";
 
 const Alert = React.forwardRef(function Alert(props, ref) {
   return <MuiAlert elevation={6} ref={ref} variant="filled" {...props} />;
@@ -108,6 +109,11 @@ export default function Contato() {
   return (
     <ThemeProvider theme={theme}>
       <CssBaseline />
+      <SeoHead
+        title="Contato | Fale com a Agência AL"
+        description="Entre em contato com a Agência AL em Caxias do Sul. Converse com nossa equipe sobre marketing, websites, posicionamento e crescimento empresarial."
+        path="/contato"
+      />
       <Menu />
       <section className={styles.background3}>
         <div className={styles.heroContent}>

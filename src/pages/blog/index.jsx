@@ -1,3 +1,4 @@
+import SeoHead from "../../components/SeoHead";
 import { useEffect, useMemo, useState } from "react";
 import Head from "next/head";
 import Link from "next/link";
@@ -142,6 +143,12 @@ export default function Blog() {
 
   return (
     <>
+      <SeoHead
+        title="Blog de Marketing, Estratégia e Tecnologia | Agência AL"
+        description="Acompanhe ideias, estratégias e conteúdos sobre marketing digital, tecnologia, criatividade, posicionamento de marca e negócios."
+        path="/blog"
+      />
+
       <Head>
         <title>Blog | Agência AL</title>
         <meta

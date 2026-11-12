@@ -1,3 +1,4 @@
+import SeoHead from "../components/SeoHead";
 import Menu from "../components/menu";
 import Rodape from "../components/rodape";
 import Whats from "../components/whats";
@@ -9,6 +10,11 @@ import RodapeAl from "../components/rodape-al";
 export default function cases() {
   return (
     <>
+      <SeoHead
+        title="Portfólio e Projetos Realizados | Agência AL"
+        description="Conheça os projetos da Agência AL em desenvolvimento de websites, identidade visual, marketing digital, campanhas e posicionamento de marcas."
+        path="/cases"
+      />
       <Menu />
       <section className={styles.hero}>
         <div className={styles.interno}>

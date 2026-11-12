@@ -1,6 +1,45 @@
 import Document, { Html, Head, Main, NextScript } from "next/document";
 
 class DocumentosSite extends Document {
+  render() {
+    return (
+      <Html lang="pt-BR">
+        <Head>
+          <link rel="icon" href="/favicon.png" />
+
+          <link rel="preconnect" href="https://fonts.googleapis.com" />
+
+          <link
+            rel="preconnect"
+            href="https://fonts.gstatic.com"
+            crossOrigin="anonymous"
+          />
+
+          <link
+            href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Syne:wght@400;500;600;700;800&display=swap"
+            rel="stylesheet"
+          />
+
+          <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/icon?family=Material+Icons"
+          />
+        </Head>
+
+        <body>
+          <Main />
+          <NextScript />
+        </body>
+      </Html>
+    );
+  }
+}
+
+export default DocumentosSite;
+/*
+import Document, { Html, Head, Main, NextScript } from "next/document";
+
+class DocumentosSite extends Document {
   static async getInitialProps(context) {
     const initialProps = await Document.getInitialProps(context);
 
@@ -11,10 +50,7 @@ class DocumentosSite extends Document {
     return (
       <Html>
         <Head>
-          <title>
-            Agência AL | Uma agência em Caxias do Sul que vai acelerar sua
-            transformação digital
-          </title>
+          <title>Agência de Marketing em Caxias do Sul | Agência AL</title>
 
           <meta
             name="description"
@@ -74,3 +110,5 @@ class DocumentosSite extends Document {
 }
 
 export default DocumentosSite;
+
+*/

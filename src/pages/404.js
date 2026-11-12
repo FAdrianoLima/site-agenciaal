@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Head from "next/head";
 
 export default function Error404() {
   return (
@@ -12,6 +13,10 @@ export default function Error404() {
         gap: 20,
       }}
     >
+      <Head>
+        <title>Página não encontrada | Agência AL</title>
+        <meta name="robots" content="noindex, nofollow" />
+      </Head>
       <h1>404</h1>
 
       <h2>Página não encontrada</h2>

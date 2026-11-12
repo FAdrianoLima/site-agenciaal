@@ -1,3 +1,4 @@
+import SeoHead from "../components/SeoHead";
 import Menu from "../components/menu";
 import Rodape from "../components/rodape";
 import RodapeAl from "../components/rodape-al";
@@ -7,6 +8,12 @@ import styles from "../styles/Agencia.module.css";
 export default function Agencia() {
   return (
     <>
+      <SeoHead
+        title="A Agência | Agência AL — Marketing e Estratégia"
+        description="Conheça a Agência AL. Unimos estratégia, design, tecnologia e comunicação para desenvolver soluções personalizadas para empresas que querem crescer."
+        path="/agencia"
+      />
+
       <Menu />
 
       <section className={styles.hero}>

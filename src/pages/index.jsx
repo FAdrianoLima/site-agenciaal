@@ -1,3 +1,4 @@
+import SeoHead from "../components/SeoHead";
 import Banner from "../components/banner";
 import Menu from "../components/menu";
 import Rodape from "../components/rodape";
@@ -27,6 +28,12 @@ export default function Home() {
 
   return (
     <>
+      <SeoHead
+        title="Agência de Marketing em Caxias do Sul | Agência AL"
+        description="A Agência AL une marketing estratégico, tecnologia e comunicação para impulsionar empresas. Conheça nossos serviços de marketing digital em Caxias do Sul."
+        path="/"
+      />
+
       <Menu />
       <a id="banner"></a>
       <Banner />
@@ -176,30 +183,30 @@ export default function Home() {
           <h2>O que fazemos</h2>
 
           <div className={styles.serviceList}>
-            <div className={styles.serviceItem}>
+            <Link href="/servicos#marketing" className={styles.serviceItem}>
               <span>01</span>
               <h3>Marketing Estratégico</h3>
-            </div>
+            </Link>
 
-            <div className={styles.serviceItem}>
+            <Link href="/servicos#web" className={styles.serviceItem}>
               <span>02</span>
               <h3>Desenvolvimento Web</h3>
-            </div>
+            </Link>
 
-            <div className={styles.serviceItem}>
+            <Link href="/servicos#social" className={styles.serviceItem}>
               <span>03</span>
               <h3>Gestão de Redes Sociais</h3>
-            </div>
+            </Link>
 
-            <div className={styles.serviceItem}>
+            <Link href="/servicos#foto-video" className={styles.serviceItem}>
               <span>04</span>
               <h3>Foto e Vídeo</h3>
-            </div>
+            </Link>
 
-            <div className={styles.serviceItem}>
+            <Link href="/servicos#design" className={styles.serviceItem}>
               <span>05</span>
               <h3>Design Gráfico</h3>
-            </div>
+            </Link>
           </div>
         </div>
       </section>

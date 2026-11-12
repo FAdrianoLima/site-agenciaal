@@ -1,3 +1,4 @@
+import SeoHead from "../components/SeoHead";
 import Menu from "../components/menu";
 import Rodape from "../components/rodape";
 import RodapeAl from "../components/rodape-al";
@@ -47,10 +48,22 @@ export default function Servicos() {
       descricao: "Materiais visuais que fortalecem a percepção da sua marca.",
       link: "#design",
     },
+    {
+      numero: "07",
+      titulo: "Hospedagem e E-mails",
+      descricao:
+        "Hospedagem de sites, e-mails profissionais, backups e infraestrutura digital.",
+      link: "#hospedagem",
+    },
   ];
 
   return (
     <>
+      <SeoHead
+        title="Serviços de Marketing, Web e Tráfego Pago | Agência AL"
+        description="Conheça os serviços da Agência AL: marketing estratégico, desenvolvimento de sites, gestão de redes sociais, Google Ads, Meta Ads, design gráfico e hospedagem."
+        path="/servicos"
+      />
       <Menu />
       <div className={styles.quickNav}>
         <div className={styles.quickButton}>☰</div>
@@ -64,6 +77,7 @@ export default function Servicos() {
           <a href="#googleads">04 Google Ads</a>
           <a href="#metaads">05 Meta Ads</a>
           <a href="#design">06 Design</a>
+          <a href="#hospedagem">07 Hospedagem</a>
         </div>
       </div>
 
