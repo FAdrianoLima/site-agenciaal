@@ -1,59 +1,48 @@
 import "../styles/globals.css";
-
 import Script from "next/script";
-import { useRouter } from "next/router";
-import { useEffect } from "react";
-
-const GA_ID = process.env.NEXT_PUBLIC_GA_ID;
-const ADS_ID = process.env.NEXT_PUBLIC_GOOGLE_ADS_ID;
 
 function MyApp({ Component, pageProps }) {
-  const router = useRouter();
-
-  // Registra as mudanças de página no Google Analytics
-  useEffect(() => {
-    if (!GA_ID) return;
-
-    const handleRouteChange = (url) => {
-      window.gtag?.("config", GA_ID, {
-        page_path: url,
-      });
-    };
-
-    router.events.on("routeChangeComplete", handleRouteChange);
-
-    return () => {
-      router.events.off("routeChangeComplete", handleRouteChange);
-    };
-  }, [router.events]);
-
   return (
     <>
-      {/* Google Analytics e Google Ads */}
-      {GA_ID && (
-        <>
-          <Script
-            src={`https://www.googletagmanager.com/gtag/js?id=${GA_ID}`}
-            strategy="afterInteractive"
-          />
+      {/* Google Analytics */}
 
-          <Script id="google-analytics" strategy="afterInteractive">
-            {`
-              window.dataLayer = window.dataLayer || [];
+      <Script
+        src="https://www.googletagmanager.com/gtag/js?id=G-CKCMZGYHQC"
+        strategy="afterInteractive"
+      />
 
-              function gtag() {
-                window.dataLayer.push(arguments);
-              }
+      <Script id="google-analytics" strategy="afterInteractive">
+        {`
+    window.dataLayer = window.dataLayer || [];
 
-              window.gtag = gtag;
+    function gtag() {
+      window.dataLayer.push(arguments);
+    }
 
-              gtag('js', new Date());
-              gtag('config', '${GA_ID}');
-              ${ADS_ID ? `gtag('config', '${ADS_ID}');` : ""}
-            `}
-          </Script>
-        </>
-      )}
+    window.gtag = gtag;
+
+    gtag('js', new Date());
+
+    gtag('config', 'G-CKCMZGYHQC', {
+      page_path: window.location.pathname,
+    });
+  `}
+      </Script>
+
+      <Script
+        src="https://www.googletagmanager.com/gtag/js?id=AW-XXXXXXXXX"
+        strategy="afterInteractive"
+      />
+
+      <Script id="google-ads" strategy="afterInteractive">
+        {`
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'AW-XXXXXXXXX');
+  `}
+      </Script>
 
       {/* Brevo */}
       <Script
